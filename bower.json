@@ -1,0 +1,17 @@
+{
+  "name": "ps-backend",
+  "version": "0.0.0",
+  "main": "lib/js/",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "underscore": "~1.6.0",
+    "backbone": "~1.1.0",
+    "modernizr": "~2.7.1",
+    "less.js": "~1.7.0",
+    "bootstrap": null,
+    "handlebars": null,
+    "momentjs": "~2.6.0",
+    "reset-css": "~2.0.20110126"
+  },
+  "devDependencies": {}
+}

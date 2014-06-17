@@ -1,0 +1,34 @@
+appartamenti = [
+  { 
+    "id":"A-B1-T4-sx",
+    "edificio": "A",
+    "tipologia": "T4",
+    "piano": "1",
+    "scala": "B",
+    "superficie": {
+        "lorda":"95.32",
+        "logge":"",
+        "totale":""
+    },
+    "camere": "2 camere doppie",
+    "bagno": "",
+    "descrizione": "",
+    "pianta":""
+  },
+  { 
+    "id":"A-B1-T1-sx",
+    "edificio": "A",
+    "tipologia": "T1",
+    "piano": "1",
+    "scala": "B",
+    "superficie": {
+        "lorda":"50",
+        "logge":"",
+        "totale":""
+    },
+    "camere": "1 camera",
+    "bagno": "",
+    "descrizione": "",
+    "pianta":""
+  },  
+]
