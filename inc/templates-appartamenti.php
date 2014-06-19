@@ -130,7 +130,7 @@
   </map>
 </script>
 
-<script id="tpl-modals-container" type="text/template">
+<script id="tpl-modal" type="text/template">
 <!-- modal appartamenti -->
 <div class="modal fade" id="<%= app.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">

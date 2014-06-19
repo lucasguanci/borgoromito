@@ -62,103 +62,11 @@
       </div>
     </div>
     <!-- /Risultati ricerca -->
+    <!-- Modals appartamenti -->
     <div id="modals-container">
-      <!-- tpl-modals -->
-      <!-- modals appartamenti -->
-      <div class="modal fade" id="ed-A-A1-T2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title" id="myModalLabel">
-                Scheda appartamento ed-A-A1-T2
-              </h4>
-            </div>
-            <div class="modal-body">
-              <p class="edificio">
-                Edificio A - piano 1
-              </p>
-              <img src="images/planimetria-ed-A-A1-T2.png">
-              <p class="superficie">
-                sup. LORDA: 65 mq.<br>
-                sup. logge e balconi: 8 mq.<br>
-                sup. CONVENZIONALE: 67 mq.
-              </p>
-              <p class="camere">
-                1 camera doppia
-              </p>
-              <p class="bagno">
-                1 bagno con vasca
-              </p>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="ed-A-A1-T1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title" id="myModalLabel">
-                Scheda appartamento ed-A-A1-T1
-              </h4>
-            </div>
-            <div class="modal-body">
-              <p class="edificio">
-                Edificio A - piano 1
-              </p>
-              <img src="images/planimetria-ed-A-A1-T1.png">
-              <p class="superficie">
-                sup. LORDA: 97 mq.<br>
-                sup. logge e balconi: 9 mq.<br>
-                sup. CONVENZIONALE: 99 mq.
-              </p>
-              <p class="camere">
-                2 camere doppie
-              </p>
-              <p class="bagno">
-                1 bagno con vasca<br>
-                1 bagno con doccia
-              </p>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="ed-A-A1-T3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title" id="myModalLabel">
-                Scheda appartamento ed-A-A1-T3
-              </h4>
-            </div>
-            <div class="modal-body">
-              <p class="edificio">
-                Edificio A - piano 1
-              </p>
-              <img src="images/planimetria-ed-A-A1-T3.png">
-              <p class="superficie">
-                sup. LORDA: 65 mq.<br>
-                sup. logge e balconi: 8 mq.<br>
-                sup. CONVENZIONALE: 67 mq.
-              </p>
-              <p class="camere">
-                1 camera doppia<br>
-                1 camera singola
-              </p>
-              <p class="bagno">
-                1 bagno con doccia
-              </p>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /modals-appartamenti -->
+      <!-- tpl-modal -->
     </div>
+    <!-- /Modals appartamenti -->
     <!-- /appartamenti -->
   </section>
 
