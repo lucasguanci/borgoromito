@@ -3,6 +3,12 @@
  */
 /*rgb(230,0,115);*/
 /**
+ * Colors
+ */
+.red {
+  color: #b90000;
+}
+/**
  * Fonts
  */
 strong,
@@ -21,6 +27,7 @@ h5,
 h6 {
   font-family: 'Lato', Arial, sans-serif;
   font-weight: bold;
+  color: #b90000;
 }
 /**
  * Mixins
@@ -30,6 +37,9 @@ h6 {
  */
 hr {
   border-bottom: 1px dotted #808080;
+}
+.clear {
+  clear: both;
 }
 /**
  * Body 
@@ -208,46 +218,125 @@ section#content {
   -webkit-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
   box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
-  background-color: #f0f0f0;
+  background-color: white;
   padding: 1em 0;
-  min-height: 35em;
+  /*min-height: 35em;*/
+
 }
 section#content h2 {
-  color: #c80064;
+  color: #b90000;
   margin: 1em 0 0.5em 0;
   font-size: 110%;
 }
 section#content p {
   margin: 1em 0;
 }
-section#content div.sidebar {
-  margin-top: 2.5em;
+section#content div.contatti {
+  min-height: 10em;
 }
-section#content div.sidebar a.sidebar {
-  color: black;
+section#content div.contatti a {
+  color: #b90000;
+  text-decoration: none;
+  border-bottom: 1px dotted #b90000;
+}
+section#content div.contatti a:hover {
+  color: #b90000;
+  border-bottom: none;
   text-decoration: none;
 }
-section#content div.sidebar a.sidebar:hover {
-  color: #c80064;
+section#content div.appartamenti .btn-default {
+  background-color: #c44040;
+  color: white;
+  font-size: 83%;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-section#content div.news h2 {
+section#content div.appartamenti.intro div.img-wrapper {
+  float: left;
+  margin-right: 15px;
+}
+section#content div.appartamenti.ricerca {
+  background-color: #f0f0f0;
+  border: solid 1px white;
+  padding: 1em 15px;
+  margin: 1em 5px;
+  width: 32%;
+}
+section#content div.appartamenti.ricerca h2 {
+  margin-top: 0;
+}
+section#content div.appartamenti.ricerca.first {
+  margin-left: 0;
+}
+section#content div.appartamenti.ricerca.last {
+  margin-right: 0;
+}
+section#content div.risultati-ricerca {
+  /*display: none;*/
+
+}
+section#content div.risultati-ricerca.active {
+  display: block;
+}
+section#content div#tpl-risultati-ricerca-edificio-container {
+  background-color: #f0f0f0;
+}
+section#content div#tpl-risultati-ricerca-edificio-container img.edificio {
+  display: block;
+  float: left;
+  padding-right: 15px;
+}
+section#content div#tpl-risultati-ricerca-edificio-container h3.istruzioni {
+  padding: 1em 0;
+}
+section#content div#risultati-edificio-piano {
+  margin: 1em 0;
+}
+section#content div#risultati-edificio-piano p {
+  margin-top: 0;
+}
+section#content div#risultati-edificio-piano div.img-piano {
+  margin: 0 auto;
+  text-align: center;
+}
+section#content div#risultati-edificio-piano div.img-piano img.legenda {
+  margin-left: 15px;
+}
+section#content area {
+  cursor: pointer;
+}
+section#content div.modal img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/**
+ * News
+ */
+section.news {
+  background-color: #fffdfa;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+section.news div.news h2 {
+  margin-bottom: 1em;
   text-transform: capitalize;
   color: #b90000;
 }
-section#content div.news p.titolo {
+section.news div.news p.titolo {
   font-weight: bold;
   color: #c80064;
   margin-bottom: 0;
 }
-section#content div.news a {
+section.news div.news a {
   text-decoration: none;
   color: #c80064;
   border-bottom: 1px dotted #c80064;
 }
-section#content div.news a.link-img {
+section.news div.news a.link-img {
   border: none;
 }
-section#content div.news p.cnt {
+section.news div.news p.cnt {
   margin-top: 0;
 }
 /* index */
@@ -262,6 +351,7 @@ section#content.index {
 /* archivio news */
 section#content.secondary {
   margin-top: 6em;
+  min-height: 10em;
   box-shadow: none;
   padding-top: 0;
 }
@@ -299,6 +389,16 @@ footer p {
 footer strong {
   color: white;
   font-weight: normal;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px dotted #ffffff;
+}
+footer a:hover {
+  color: #ffffff;
+  border-bottom: none;
+  text-decoration: none;
 }
 footer div.hr {
   border-top: 1px #464646 dotted;

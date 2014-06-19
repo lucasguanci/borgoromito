@@ -26,217 +26,144 @@
         <div id="appartamenti" class="col-md-12 appartamenti intro">
           <h2>Gli appartamenti</h2>
           <div class="img-wrapper">
-            <img src="images/cpmplesso-residenziale-borgo-romito-piano-volumetrico.png" alt="Piano volumetrico Complesso residenziale BorgoRomito, Prato" />
+            <img src="images/complesso-residenziale-borgo-romito-piano-volumetrico.png" alt="Piano volumetrico Complesso residenziale BorgoRomito, Prato" />
           </div>          
           <p class="intro">
-            Breve introduzione al complesso residenziale
-            4 edifici, edifico A ..., edificio B ..., etc.
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+            Il <span class="red"><strong>Complesso residenziale BorgoRomito</strong></span>, appena fuori le Mura a due passi dal Centro Storico di Prato vicino a tutte le principali vie di comunicazione, in una zona ad alta densità di servizi.<br>
+            La tua casa costruita in equilibrio fra vivibilità e tecnologia, nel rispetto delle risorse ambientali e del risparmio energetico.<br>
+            Giardini e percorsi pedonali creano un ambiente accogliente e sereno con tante comodità.<br>
+            La qualità dei materiali e l’attenzione alle finiture trasformano una casa nella tua casa.
           </p>
           <p class="intro">Disponibili anche garage e fondi commerciali</p>          
-        </div>
-      </div>
-      <!-- /Intro appartamenti -->
-      <!-- Ricerca appartamenti -->
-      <div class="row content">
-        <!-- Ricerca per edificio -->
-        <div class="col-md-4 appartamenti ricerca edificio">
-          <h2>Ricerca per Edificio</h2>
-          <form role="form" id="form-ricerca-edificio" class="form-ricerca edificio">
-            <div class="radio">
-              <label>
-                <input type="radio" name="edificio" id="edificio-A" value="edificio-A" checked>
-                Edificio A
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="edificio" id="edificio-B" value="edificio-B" disabled>
-                Edificio B
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="edificio" id="edificio-C" value="edificio-C">
-                Edificio C
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="edificio" id="edificio-D" value="edificio-D" disabled>
-                Edificio D
-              </label>
-            </div>
-            <button type="submit" class="btn btn-default">Prosegui</button>
-          </form>
-        </div>
-        <!-- /Ricerca per edificio -->
-        <!-- Ricerca per tipologia -->
-        <div class="col-md-4 appartamenti ricerca tipologia">
-          <h2>Ricerca per Tipologia</h2>
-          <form role="form" id="form-ricerca-tipologia" class="form-ricerca tipologia">
-            <div class="radio">
-              <label>
-                <input type="radio" name="tipologia" id="T1" value="T1">
-                1 camera
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="tipologia" id="T2" value="T2" checked>
-                2 camere
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="tipologia" id="T3" value="T3">
-                3 camere
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="tipologia" id="T4" value="T4">
-                Attico
-              </label>
-            </div>
-            <button type="submit" class="btn btn-default">Prosegui</button>
-          </form>
-        </div>
-        <!-- /Ricerca per tipologia -->
-        <!-- Ricerca per appartamento -->
-        <div class="col-md-4 appartamenti ricerca appartamento">
-          <h2>Ricerca diretta</h2>
-          <form role="form" id="form-ricerca-appartamento" class="form-ricerca appartamento">
-            <div class="form-group">
-              <label for="id-appartamento">Identificativo appartamento</label>
-              <input type="text" class="form-control" id="id-appartamento" placeholder="ed.C-CT-T2sx">
-            </div>
-            <button type="submit" class="btn btn-default">Prosegui</button>
-          </form>
-        </div>
-        <!-- /Ricerca per appartamento -->
-      </div>
-      <!-- /Ricerca appartamenti -->
-      <!-- Risultati ricerca -->
-      <div class="row content">
-        <!-- risultati ricerca per edificio -->
-        <div id="risultati-edificio" class="col-md-12 appartamenti risultati-ricerca-1">
-          <h2>Risultati ricerca per edificio</h2>
-          <h3>Edificio A</h3>
-          <p class="descrizione">
-            <img src="images/edificio.png">
-            lorem ipsum
+          <p class="intro-istruzioni">
+            Per vedere gli appartamenti disponibili è possibile effettuare una <em>ricerca per edificio</em>, una <em>ricerca per tipologia</em> di appartamento (1 camera, 2 camere, etc) oppure una <em>ricerca diretta</em> inserendo l'identificativo dell'appartamento.
           </p>
-          <form id="form-edificio-seleziona-piano" class="form-inline" role="form">
-            <select class="form-control">
-              <option>Piano 1</option>
-              <option>Piano 2</option>
-              <option>Piano 3</option>
-              <option>Piano 4</option>
-              <option>Piano 5</option>
-            </select>
-            <button type="submit" class="btn btn-default">Prosegui</button>
-          </form>
-          <!-- risultati ricerca per edificio, mostra piano -->
-          <div id="risultati-edificio-piano" class="risultati-ricerca-2">
-            <h3>Edificio A - piano 1</h3>
-            <p class="intro">
-              Per visualizzare la descrizione di un appartamento, cliccare sulla pianta sull'appartamento desiderato.
-            </p>
-            <img src="images/map-edA-p1.png" width="940" height="350" usemap="#map-edA-p1" alt="">
-            <map name="map-edA-p1">
-              <area shape="poly" alt="" coords="741,162, 741,129, 867,129, 867,152, 846,152, 846,212, 723,212, 723,162, 741,162" href="#edA-C1-T1-02-dw" data-toggle="modal" data-target="#modal-appartamento">
-              <area shape="poly" alt="" coords="698,47, 772,47, 846,47, 846,107, 867,107, 867,129, 741,129, 741,142, 710,142, 710,113, 698,113, 698,47" href="#edA-C1-T1-01-up">
-              <area shape="poly" alt="" coords="72,167, 81,167, 81,113, 165,113, 165,142, 167,142, 167,222, 72,222, 72,167" href="#edA-A1-T1-01-sx">
-              <area shape="poly" alt="" coords="72,222, 72,278, 81,278, 81,331, 163,331, 245,331, 245,208, 167,208, 167,222, 72,222" href="#edA-A1-T2-01-sx">
-              <area shape="poly" alt="" coords="564,47, 698,47, 698,113, 686,113, 686,142, 673,142, 673,212, 620,212, 620,220, 564,220, 564,134, 564,47" href="#edA-C1-T2-01-sx">
-              <area shape="poly" alt="" coords="431,47, 564,47, 564,134, 564,220, 509,220, 509,212, 455,212, 455,142, 443,142, 443,113, 431,113, 431,47" href="#edA-B1-T2-02-dx">
-              <area shape="poly" alt="" coords="297,47, 431,47, 431,113, 418,113, 418,142, 406,142, 406,212, 352,212, 352,220, 297,220, 297,134, 297,47" href="#edA-B1-T2-01-sx">
-              <area shape="poly" alt="" coords="190,142, 190,47, 297,47, 297,134, 297,220, 245,220, 245,142, 190,142" href="#edA-A1-T2-02-dx">
-            </map>
-<!--             <a id="prenota" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-appartamento"></a>            
- -->
-            <div class="modal fade" id="modal-appartamento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">
-                      Scheda appartamento xyz
-                    </h4>
-                  </div>
-                  <div class="modal-body">
-                    <p>
-                      Lorem ipsum..
-                    </p>
-                  </div>
-                </div>
-              </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Intro appartamenti -->
+    <!-- Ricerca appartamenti -->
+    <div class="container">
+      <div id="tpl-ricerca-container" class="row content">
+        <!-- #tpl-ricerca -->
+      </div>
+    </div>
+    <!-- /Ricerca appartamenti -->
+    <!-- Risultati ricerca -->
+    <div class="container">
+      <div class="row content" id="risultati-ricerca">
+        <!-- risultati ricerca per edificio -->
+        <div id="tpl-risultati-ricerca-edificio-container" class="col-md-12 appartamenti risultati-ricerca risultati-ricerca-1">
+          <!-- #tpl-risultati-ricerca-edificio -->
+        </div>
+        <!-- risultati ricerca per tipologia -->
+        <div id="tpl-risultati-ricerca-tipologia-container" class="col-md-12 appartamenti risultati-ricerca">
+        </div>
+      </div>
+    </div>
+    <!-- /Risultati ricerca -->
+    <div id="modals-container">
+      <!-- tpl-modals -->
+      <!-- modals appartamenti -->
+      <div class="modal fade" id="ed-A-A1-T2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">
+                Scheda appartamento ed-A-A1-T2
+              </h4>
+            </div>
+            <div class="modal-body">
+              <p class="edificio">
+                Edificio A - piano 1
+              </p>
+              <img src="images/planimetria-ed-A-A1-T2.png">
+              <p class="superficie">
+                sup. LORDA: 65 mq.<br>
+                sup. logge e balconi: 8 mq.<br>
+                sup. CONVENZIONALE: 67 mq.
+              </p>
+              <p class="camere">
+                1 camera doppia
+              </p>
+              <p class="bagno">
+                1 bagno con vasca
+              </p>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
             </div>
           </div>
-          <!-- /risultati ricerca per edificio, mostra piano -->
         </div>
-        <!-- /risultati ricerca per edificio -->
-        <!-- risultati ricerca per tipologia -->
-        <div id="risultati-tipologia" class="col-md-12 appartamenti risultati-ricerca">
-          risultati ricerca per tipologia
+      </div>
+      <div class="modal fade" id="ed-A-A1-T1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">
+                Scheda appartamento ed-A-A1-T1
+              </h4>
+            </div>
+            <div class="modal-body">
+              <p class="edificio">
+                Edificio A - piano 1
+              </p>
+              <img src="images/planimetria-ed-A-A1-T1.png">
+              <p class="superficie">
+                sup. LORDA: 97 mq.<br>
+                sup. logge e balconi: 9 mq.<br>
+                sup. CONVENZIONALE: 99 mq.
+              </p>
+              <p class="camere">
+                2 camere doppie
+              </p>
+              <p class="bagno">
+                1 bagno con vasca<br>
+                1 bagno con doccia
+              </p>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+            </div>
+          </div>
         </div>
-        <!-- /risultati ricerca per tipologia -->
-        <!-- risultati ricerca per diretta -->
-        <div id="risultati-diretta" class="col-md-12 appartamenti risultati-ricerca">
-          risultati ricerca diretta
+      </div>
+      <div class="modal fade" id="ed-A-A1-T3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">
+                Scheda appartamento ed-A-A1-T3
+              </h4>
+            </div>
+            <div class="modal-body">
+              <p class="edificio">
+                Edificio A - piano 1
+              </p>
+              <img src="images/planimetria-ed-A-A1-T3.png">
+              <p class="superficie">
+                sup. LORDA: 65 mq.<br>
+                sup. logge e balconi: 8 mq.<br>
+                sup. CONVENZIONALE: 67 mq.
+              </p>
+              <p class="camere">
+                1 camera doppia<br>
+                1 camera singola
+              </p>
+              <p class="bagno">
+                1 bagno con doccia
+              </p>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+            </div>
+          </div>
         </div>
-        <!-- /risultati ricerca per diretta -->
-      <!-- /Risultati ricerca -->
-
+      </div>
+      <!-- /modals-appartamenti -->
     </div>
     <!-- /appartamenti -->
-    <!-- news -->
-    <div class="container">
-      <div id="news-wrapper" class="row content news">
-        <!-- col.1 -->
-        <div class="col-md-3 news">
-          <h2>BorgoRomito</h2>
-          <a class="link-img" href="#">
-            <img src="images/placeholder-news-220.png" />
-          </a>
-          <p class="cnt">
-            Lorem ipsum dolor sit amet, ei eros consulatu efficiendi vel, vel autem graeco interpretaris te. Vidit vivendum facilisi in has, ex torquatos democritum pri, gubergren similique nec eu. Ut sed omnes tincidunt concludaturque, labores inciderint delicatissimi sea ea. Et apeirian inciderint vis. Per elaboraret signiferumque ea.
-          </p>
-        </div>
-        <!-- col.1 -->
-        <div class="col-md-3 news">
-          <h2>Il progetto</h2>
-          <a class="link-img" href="#">
-            <img src="images/placeholder-news-220.png" />
-          </a>
-          <p class="cnt">
-            Lorem ipsum dolor sit amet, ei eros consulatu efficiendi vel, vel autem graeco interpretaris te. Vidit vivendum facilisi in has, ex torquatos democritum pri, gubergren similique nec eu. Ut sed omnes tincidunt concludaturque, labores inciderint delicatissimi sea ea. Et apeirian inciderint vis. Per elaboraret signiferumque ea.
-          </p>
-        </div>
-        <!-- col.3 -->
-        <div class="col-md-3 news">
-          <h2>Gli appartamenti</h2>
-          <a class="link-img" href="#">
-            <img src="images/placeholder-news-220.png" />
-          </a>
-          <p class="cnt">
-            Lorem ipsum dolor sit amet, ei eros consulatu efficiendi vel, vel autem graeco interpretaris te. Vidit vivendum facilisi in has, ex torquatos democritum pri, gubergren similique nec eu. Ut sed omnes tincidunt concludaturque, labores inciderint delicatissimi sea ea. Et apeirian inciderint vis. Per elaboraret signiferumque ea.
-          </p>
-        </div>
-        <!-- col.4 -->
-        <div class="col-md-3 news">
-          <h2>Mutuo agevolato</h2>
-          <a class="link-img" href="#">
-            <img src="images/placeholder-news-220.png" />
-          </a>
-          <p class="cnt">
-            Lorem ipsum dolor sit amet, ei eros consulatu efficiendi vel, vel autem graeco interpretaris te. Vidit vivendum facilisi in has, ex torquatos democritum pri, gubergren similique nec eu. Ut sed omnes tincidunt concludaturque, labores inciderint delicatissimi sea ea. Et apeirian inciderint vis. Per elaboraret signiferumque ea.
-          </p>
-        </div>
-       </div>
-    </div>
-    <!-- /news -->
+  </section>
+
+  <section id="news" class="news">
+    <?php include_once 'inc/news.php' ?>
   </section>
   <!-- /content -->    
   <!-- footer -->
@@ -246,9 +173,11 @@
   <!-- /footer -->
   <!-- templates -->
   <?php include_once 'inc/templates.php'; ?>
+  <?php include_once 'inc/templates-appartamenti.php'; ?>
   <!-- /templates -->
   <!-- scripts -->
   <?php include_once 'inc/scripts.php'; ?>
+  <?php include_once 'inc/scripts-appartamenti.php'; ?>
   <!-- /scripts -->
 </body>
 </html>

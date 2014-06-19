@@ -26,13 +26,10 @@
                   <a href="appartamenti.php">Gli appartamenti</a>
                 </span>
                 <span class="menu-item">
-                  <a href="#">Ufficio vendite</a>
-                </span>
-                <span class="menu-item">
-                  <a href="#">Progetto BorgoRomito</a>
+                  <a href="contatti.php">Ufficio vendite</a>
                 </span>
                 <span class="menu-item last">
-                  <a href="#">Contatti</a>
+                  <a href="#">Progetto BorgoRomito</a>
                 </span>
               </p>
             </div>

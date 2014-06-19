@@ -7,12 +7,11 @@ var app = app || {};
     },
     start: function() {
       if ( Backbone.history.start() ) {
-          console.log("History started successfully");
-          return true;
-        } else {
-          console.log('can\'t start history');
-          return false;
-        }
+        console.log("History started successfully");
+        return true;
+      } else {
+        console.log('can\'t start history');
+        return false;
       }
     },
     init: function() {
