@@ -9,7 +9,7 @@ var app = app || {};
   app.Data.Appartamenti = [
     { id:"ed-A-A1-T1", edificio:"A", piano:"1", tipologia:"T1", superficie:{lorda:44,logge:9,convenzionale:46}, camere:["1 camera doppia"], bagni:["1 bagno con vasca"], planimetria:"images/planimetria-ed-A-A1-T1.png" },
     { id:"ed-A-A1-T2", edificio:"A", piano:"1", tipologia:"T2", superficie:{lorda:44,logge:9,convenzionale:46}, camere:["1 camera doppia"], bagni:["1 bagno con vasca"], planimetria:"images/planimetria-ed-A-A1-T2.png" },    
-    { id:"ed-A-A1-T3", edificio:"A", piano:"1", tipologia:"T3", camere:["1 camera doppia","1 camera singola"], bagni:["1 bagno con doccia"], planimetria:"images/planimetria-ed-A-A1-T3.png" }
+    { id:"ed-A-A1-T3", edificio:"A", piano:"1", tipologia:"T3", superficie:{lorda:44,logge:9,convenzionale:46}, camere:["1 camera doppia","1 camera singola"], bagni:["1 bagno con doccia"], planimetria:"images/planimetria-ed-A-A1-T3.png" }
   ];
 
 	app.Router = new Workspace();

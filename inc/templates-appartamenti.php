@@ -145,7 +145,7 @@
         <p class="edificio">
           Edificio <%= app.edificio %> - piano <%= app.piano %>
         </p>
-        <img src="images/<%= app.planimetria %>">
+        <img src="<%= app.planimetria %>">
         <p class="superficie">
           sup. LORDA: <%= app.superficie.lorda %> mq.<br>
           sup. logge e balconi: <%= app.superficie.logge %> mq.<br>
