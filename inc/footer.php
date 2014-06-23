@@ -35,7 +35,7 @@
             <img src="images/logo-CAP-casa.png">
           </p>
           <p>
-            <a href="#">CAP casa spa</a> - gruppo <a href="http://www.capautolinee.it">CAP autolinee</a>
+            <a href="#">CAP casa spa</a>
           </p>
         </div>
       </div>
