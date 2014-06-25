@@ -28,6 +28,9 @@ curl https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_all_docs/\?i
 - transform into "proper" json file with
 node couchdb2json.js
 
+# 140625b
+- merged branch _admin_ into _master_
+
 # TODO (140625)
 - gulp per compilare css, autoprefixer
 - inserire appartamenti e creare mappe cliccabili piani (da inserire in 
