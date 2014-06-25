@@ -80,7 +80,7 @@
   </footer>
   <!-- /footer -->
   <!-- templates -->
-  <?php include_once 'inc/templates-admin.php'; ?>
+  <?php include_once 'inc/templates-appartamenti.php'; ?>
   <!-- /templates -->
   <!-- scripts -->
   <?php include_once 'inc/scripts.php'; ?>
