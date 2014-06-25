@@ -20,8 +20,15 @@ var ProfileList = Backbone.Collection.extend({
 # 140620 
 - on branch _admin_
 
-# TODO (140620)
-- admin per inserimento appartamenti (vd. appunti)
+# 140625 
+- the CouchDB interface works fine
+- on branch _admin_ there is still an issue with handling the response from all the calls to CouchDB when retrieving all the documents to populate this.appartamenti
+- get files from CouchDB by issuing
+curl https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_all_docs/\?include_docs=true > appartamenti.couchdb 
+- transform into "proper" json file with
+node couchdb2json.js
+
+# TODO (140625)
 - gulp per compilare css, autoprefixer
 - inserire appartamenti e creare mappe cliccabili piani (da inserire in 
 - template)

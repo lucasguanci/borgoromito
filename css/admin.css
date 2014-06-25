@@ -1,0 +1,29 @@
+.clear {
+  clear: both;
+}
+div#content-wrapper {
+  margin: 1em 0;
+}
+div.ctype-wrapper {
+  margin: 0 15px;
+}
+div.model {
+  background-color: #f0f0f0;
+  float: left;
+  width: 40%;
+  padding: 6px 12px;
+  margin-right: 12px;
+}
+div.ctype-item {
+  margin: 0.5em 0;
+}
+div.cnt[data-model="new"] {
+  display: none;
+}
+button[type="submit"] {
+  margin: 1em 0;
+}
+.btn {
+  font-weight: bold;
+  text-transform: capitalize;
+}

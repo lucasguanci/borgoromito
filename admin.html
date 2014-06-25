@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/admin.css" />
     <!-- favicon -->
     <!-- 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -77,14 +78,11 @@
     <% _.each(models, function(model) { %>
       <div class="ctype-item">
         <div class="<%=model._id%> model">
-          <%=model._id%>
-          <% if ( ctype=="news") { %>
-            &nbsp;<%= model.titolo %>
-          <% } %>
+          <%=model.nome%>
         </div>
         <div class="buttons">
-          <button type="button" class="btn btn-primary edit" data-ctype="<%=ctype%>" data-model="<%=model._id%>">edit</button>
-          <button type="button" class="btn btn-primary remove" data-ctype="<%=ctype%>" data-model="<%=model._id%>">remove</button>
+          <button type="button" class="btn btn-primary edit" data-ctype="<%=ctype%>" data-model="<%=model._id%>"><i class="fa fa-pencil"></i> edit</button>
+          <button type="button" class="btn btn-primary remove" data-ctype="<%=ctype%>" data-model="<%=model._id%>"><i class="fa fa-times"></i> remove</button>
         </div>
         <div class="clear"></div>
         <div class="cnt" data-model="<%=model._id%>"></div>
@@ -97,7 +95,7 @@
     <form class="admin <%= ctype %>" data-ctype="<%= ctype %>" <% if (typeof(model)!=="undefined") { %> data-model="<%= model._id %>" <% } %> >
       <!-- ctype -->
       <label for="ctype">ctype</label>
-      <input type="text" class="form-control" name="ctype" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.ctype) !== "undefined" ) { %> value="<%= model.ctype %>" <% } %> />
+      <input type="text" class="form-control" name="ctype" placeholder="appartamenti" <% if ( typeof(model)!=="undefined" && typeof(model.ctype) !== "undefined" ) { %> value="<%= model.ctype %>" <% } %> />
       <!-- nome -->
       <label for="nome">nome</label>
       <input type="text" class="form-control" name="nome" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.nome) !== "undefined" ) { %> value="<%= model.nome %>" <% } %> />
