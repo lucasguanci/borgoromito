@@ -10,36 +10,12 @@ var app = app || {};
           name: "appartamenti"
           // url: "/artists"
         }
-      ];     
-      // this.appartamenti = new app.Appartamenti();
-      // this.appartamenti.fetch({reset: true});
-      // this.listenTo(this.appartamenti, 'reset', this.render);
-      // this.listenTo(this.appartamenti, 'sort', this.render);
+      ];
+      this.appartamenti = new app.Appartamenti();
+      console.log('init: '+this.appartamenti.length);
+      this.listenTo(this.appartamenti, 'reset', this.render);
       // collect models and create new collection
-      app.Collections = {};
-      app.Collections.Appartamenti = {};
-      var self = this;
-      var loaded = new $.Deferred();
-      loaded.done(function() {
-        console.log(self.appartamenti.length);
-        app.Collections.Appartamenti.trigger('reset');        
-      });
-      $.getJSON('https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_design/get/_view/all', function(data) {
-          app.Collections.Appartamenti = new app.Appartamenti();
-          self.listenTo(app.Collections.Appartamenti, 'reset', self.render);
-          var n = data.total_rows;
-          _.each(data.rows, function(item, index) {
-            // get id
-            $.getJSON('https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/'+item.id, function(model) { 
-                app.Collections.Appartamenti.add(model);
-                if ( index == n-1 ) {
-                  self.appartamenti = app.Collections.Appartamenti;
-                  loaded.resolve();      
-                }                
-              });
-          });
-          
-      });
+      this.readCouchDB();
     },
     events: {
       'click button.add': 'addEdit',
@@ -48,17 +24,9 @@ var app = app || {};
       'submit form.admin': 'submitForm'
     },
     render: function() {
-      this.$el.append( this.template(this.ctype) );
+      this.$el.html( this.template(this.ctype) );
       subview = new app.ctypeView();    
-      this.$el.find('#appartamenti').append(subview.render("appartamenti",this.appartamenti));
-      // _.each(this.ctype, function(type) {
-        // $.getJSON(type.url)
-        //   .done(function(data) {
-        //     subview = new app.ctypeView();    
-        //     self.$el.find('#'+type.name).append(subview.render(type.name,data));
-        //     console.log('type: '+type.name);
-        //   });
-      // });
+      this.$el.find('#appartamenti div.panel-body').html(subview.render("appartamenti",this.appartamenti));
     },
     addEdit: function(e) {
       var ctype = $(e.target).attr('data-ctype');
@@ -96,26 +64,6 @@ var app = app || {};
         var m = this.appartamenti.findWhere({_id: model});
         subview = new app.addEditView();
         self.$el.find('div.cnt[data-model="'+model+'"]').empty().append(subview.render(ctype, m.toJSON()));
-        // this.appartamenti.each(function(data){
-        //   subview = new app.addEditView();
-        //   self.$el.find('div.cnt[data-model="'+model+'"]').empty().append(subview.render(ctype, data.toJSON()));
-        //   // enable CKeditor
-        //   self.$el.find('textarea').each(function(i,item) {
-        //     var id = $(this).attr('name');
-        //     CKEDITOR.replace(id);
-        //   });
-        // }, this);
-        // load and display model data
-        // $.getJSON('/'+ctype+'/'+model)
-        //   .done(function(data) {
-        //     subview = new app.addEditView();
-        //     self.$el.find('div.cnt[data-model="'+model+'"]').empty().append(subview.render(ctype, data));
-        //     // enable CKeditor
-        //     self.$el.find('textarea').each(function(i,item) {
-        //       var id = $(this).attr('name');
-        //       CKEDITOR.replace(id);
-        //     });
-        //   });
       }
     },
     submitForm: function(e) {
@@ -142,11 +90,6 @@ var app = app || {};
           formData.bagni[0] = $(e.target).find('input[name="bagno_1"]').val();
           formData.bagni[1] = $(e.target).find('input[name="bagno_2"]').val();
           formData.planimetria = $(e.target).find('input[name="planimetria"]').val();
-          // bio
-          // formData.immagini = [];
-          // _.each($(e.target).find('input.immagini'),function(item){
-          //   formData.immagini.push($(item).val());
-          // });
           break;
       }
       // check if CREATE or UPDATE      
@@ -156,45 +99,36 @@ var app = app || {};
         var id = m.get("_id");
         var rev = m.get("_rev");
         formData._rev = rev;
-        this.updateToDB(id,formData);
-        app.Collections.Appartamenti.save(m);
-        // save to DB
-        // m.set(formData);
-        // m.save();
-
-        // $.ajax({
-        //   url: '/'+ctype+'/'+model,
-        //   type: 'PUT',
-        //   // contentType: 'application/json',
-        //   // dataType: "json",
-        //   data: JSON.stringify(data),
-        //   success: function(data,textStatus,jqXHR) {
-        //     alert('DB updated.');
-        //     console.log( 'PUT response:' );
-        //     console.dir( data );
-        //     console.log( textStatus );
-        //     console.dir( jqXHR );
-        //     $('div.cnt[data-model="'+model+'"]').removeClass("active").hide();
-        //   },
-        //   error: function(jqXHR,textStatus,errorThrown) {
-        //     alert("error: "+textStatus);
-        //   }
-        // });
+        this.updateCouchDB(id,formData);
+        this.readCouchDB();
       } else {
         // CREATE
-        this.createToDB(formData);        
-        // $.post('/'+ctype, JSON.stringify(data), function(data,textStatus,jqXHR) {
-        //     alert('DB post.');
-        //     console.log( 'POST response:' );
-        //     console.dir( data );
-        //     console.log( textStatus );
-        //     console.dir( jqXHR );
-        //     $('div.cnt[data-model="new"]').removeClass("active").hide();
-        //   }
-        // );
+        this.createCouchDB(formData);  
+        this.readCouchDB();   
       }
     },
-    createToDB: function(formData) {
+    readCouchDB: function() {
+      this.appartamenti.reset(undefined, {silent:true});
+      var self = this;
+      var loaded = new $.Deferred();
+      loaded.done(function() {
+        console.log('read from DB: '+self.appartamenti.length);
+        self.appartamenti.trigger('reset');        
+      });      
+      $.getJSON('https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_design/get/_view/all', function(data) {
+          var n = data.total_rows;
+          _.each(data.rows, function(item, index) {
+            // get id
+            $.getJSON('https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/'+item.id, function(model) { 
+                self.appartamenti.add(model);
+                if ( index == n-1 ) {
+                  loaded.resolve();      
+                }                
+              });
+          });          
+      });
+    }, 
+    createCouchDB: function(formData) {
       var uuids = {};
       res = $.getJSON('https://brontoluke:rio2016@minimalg.iriscouch.com/_uuids', function(uuids) { 
           var uuid = uuids.uuids[0];
@@ -211,7 +145,7 @@ var app = app || {};
           });
       });
     },
-    updateToDB: function(id,formData) {
+    updateCouchDB: function(id,formData) {
       $.ajax({
         url: 'https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/'+id,
         type: 'PUT',
