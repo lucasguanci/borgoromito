@@ -17,6 +17,9 @@ var ProfileList = Backbone.Collection.extend({
 - merged branch _modals_ into master
 - modified _compile.sh_, now changes php extension in html for anchor tags 
 
+# 140620 
+- on branch _admin_
+
 # TODO (140620)
 - admin per inserimento appartamenti (vd. appunti)
 - gulp per compilare css, autoprefixer

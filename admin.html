@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BorgoRomito - complesso residenziale, Prato // Admin</title>
+    <!-- properly render unicode characters in IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- common head elements -->
+        <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- favicon -->
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+     -->
+     <!-- google webmaster -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+  </head>
+<body>
+  <!-- header -->
+  <header></header>
+  <!-- /header -->
+  
+  <!-- admin -->
+  <section id="admin" class="admin">
+    <div class="container">
+      <!-- content -->
+      <div class="row">
+        <div class="col-md-12">
+          <div id="admin-content-wrapper"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /news -->
+
+  <!-- footer -->
+  <footer></footer>
+  <!-- /footer -->
+
+  <!-- templates -->
+  <!-- Underscore.js templates -->
+  <script id="tpl-admin" type="text/template">
+    <% _.each(this.ctype, function(type) { %>
+      <div class="panel-group ctype" id="accordion-<%= type.name %>">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion-<%= type.name %>" href="#<%= type.name %>">
+                <%= type.name %>
+              </a>
+            </h4>
+          </div>
+          <div id="<%= type.name %>" class="panel-collapse collapse in">
+            <div class="panel-body"></div>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+  </script>
+
+  <script id="tpl-show-ctype" type="text/template">
+    <div class="ctype-add-new">
+      <button type="button" class="btn btn-primary add" data-ctype="<%= ctype %>">add new</button>
+      <div class="cnt <%= ctype %>" data-model="new"></div>
+    </div>
+    <% _.each(models, function(model) { %>
+      <div class="ctype-item">
+        <div class="<%=model._id%> model">
+          <%=model._id%>
+          <% if ( ctype=="news") { %>
+            &nbsp;<%= model.titolo %>
+          <% } %>
+        </div>
+        <div class="buttons">
+          <button type="button" class="btn btn-primary edit" data-ctype="<%=ctype%>" data-model="<%=model._id%>">edit</button>
+          <button type="button" class="btn btn-primary remove" data-ctype="<%=ctype%>" data-model="<%=model._id%>">remove</button>
+        </div>
+        <div class="clear"></div>
+        <div class="cnt" data-model="<%=model._id%>"></div>
+      </div>
+    <% }) %>
+  </script>
+
+  
+  <script id="tpl-add-edit-appartamenti" type="text/template">
+    <form class="admin <%= ctype %>" data-ctype="<%= ctype %>" <% if (typeof(model)!=="undefined") { %> data-model="<%= model._id %>" <% } %> >
+      <!-- ctype -->
+      <label for="ctype">ctype</label>
+      <input type="text" class="form-control" name="ctype" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.ctype) !== "undefined" ) { %> value="<%= model.ctype %>" <% } %> />
+      <!-- nome -->
+      <label for="nome">nome</label>
+      <input type="text" class="form-control" name="nome" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.nome) !== "undefined" ) { %> value="<%= model.nome %>" <% } %> />
+      <!-- edificio -->
+      <label for="edificio">edificio</label>
+      <input type="text" class="form-control" name="edificio" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.edificio) !== "undefined" ) { %> value="<%= model.edificio %>" <% } %> />
+      <!-- tipologia -->
+      <label for="tipologia">tipologia</label>
+      <input type="text" class="form-control" name="tipologia" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.tipologia) !== "undefined" ) { %> value="<%= model.tipologia %>" <% } %> />
+      <!-- piano -->
+      <label for="piano">piano</label>
+      <input type="text" class="form-control" name="piano" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.piano) !== "undefined" ) { %> value="<%= model.piano %>" <% } %> />
+      <!-- superficie_lorda -->
+      <label for="superficie_lorda">superficie_lorda</label>
+      <input type="text" class="form-control" name="superficie_lorda" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.superficie_lorda) !== "undefined" ) { %> value="<%= model.superficie_lorda %>" <% } %> />
+      <!-- superficie_logge -->
+      <label for="superficie_logge">superficie_logge</label>
+      <input type="text" class="form-control" name="superficie_logge" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.superficie_logge) !== "undefined" ) { %> value="<%= model.superficie_logge %>" <% } %> />
+      <!-- superficie_convenzionale -->
+      <label for="superficie_convenzionale">superficie_convenzionale</label>
+      <input type="text" class="form-control" name="superficie_convenzionale" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.superficie_convenzionale) !== "undefined" ) { %> value="<%= model.superficie_convenzionale %>" <% } %> />
+      <!-- camere -->
+      <label for="camere">camere</label>
+      <input type="text" class="form-control" name="camera_1" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.camera_1) !== "undefined" ) { %> value="<%= model.camera_1 %>" <% } %> />
+      <input type="text" class="form-control" name="camera_2" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.camera_2) !== "undefined" ) { %> value="<%= model.camera_2 %>" <% } %> />
+      <!-- bagni -->
+      <label for="bagni">bagni</label>
+      <input type="text" class="form-control" name="bagno_1" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.bagno_1) !== "undefined" ) { %> value="<%= model.bagno_1 %>" <% } %> />
+      <input type="text" class="form-control" name="bagno_2" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.bagno_2) !== "undefined" ) { %> value="<%= model.bagno_2 %>" <% } %> />
+      <!-- planimetria -->
+      <label for="planimetria">planimetria</label>
+      <input type="text" class="form-control" name="planimetria" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.planimetria) !== "undefined" ) { %> value="<%= model.planimetria %>" <% } %> />
+      <!-- submit -->
+      <button type="submit" class="btn btn-primary">Invia</button>
+    </form>
+  </script>
+  <!-- /templates -->
+  
+
+  <!-- scripts -->
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
+  <script src="js/lib/less-1.7.0.js"></script>
+  <script src="js/lib/underscore.js"></script>
+  <script src="js/lib/backbone.js"></script>
+  <script type="text/javascript" src="js/lib/backbone.localStorage.js"></script>
+  <!-- BorgoRomito Admin -->
+  <script src="js/models/edificio.js"></script>
+  <script src="js/models/appartamento.js"></script>
+  <script src="js/collections/edifici.js"></script>
+  <script src="js/collections/appartamenti.js"></script>
+  <script src="js/routers/adminRouter.js"></script>
+  <script src="js/views/adminView.js"></script>
+  <script src="js/views/ctypeView.js"></script>
+  <script src="js/views/adminModelView.js"></script>
+  <script src="js/views/addEditView.js"></script>
+  <script src="js/admin.js"></script>
+  <!-- /scripts -->
+</body>
+</html>
