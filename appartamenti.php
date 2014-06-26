@@ -58,6 +58,7 @@
         </div>
         <!-- risultati ricerca per tipologia -->
         <div id="tpl-risultati-ricerca-tipologia-container" class="col-md-12 appartamenti risultati-ricerca">
+          <!-- #tpl-risultati-ricerca-tipologia -->
         </div>
       </div>
     </div>

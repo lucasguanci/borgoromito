@@ -28,7 +28,14 @@ curl https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_all_docs/\?i
 - transform into "proper" json file with
 node couchdb2json.js
 
-# TODO (140625)
+# 140625b
+- cambiare tipologia (T1, T2, ..) in (1C, 2C, ..) oppure aggiungere nuovo campo?
+
+# 140626
+- on branch _tipologia_, creata ricerca per tipologia
+
+# TODO (140626)
+- __ricerca per tipologia: testare e creare styling__
 - gulp per compilare css, autoprefixer
 - inserire appartamenti e creare mappe cliccabili piani (da inserire in 
 - template)
