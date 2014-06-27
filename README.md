@@ -34,11 +34,16 @@ node couchdb2json.js
 # 140626
 - on branch _tipologia_, creata ricerca per tipologia
 
-# TODO (140626)
-- __ricerca per tipologia: testare e creare styling__
+# 140627
+- fixed _errore mainView.js:52_ nella costruzione del vettore edifici, elementi duplicati
+- fixed ricerca per tipologia: testare e creare styling_
+- styling ricerca per tipologia
+
+# TODO
+- merge _tipologia_ into _master_
+- inserire appartamenti e creare mappe cliccabili piani 
+- gestire caso "nessun risultato"
 - gulp per compilare css, autoprefixer
-- inserire appartamenti e creare mappe cliccabili piani (da inserire in 
-- template)
 
 __GULP__
 https://www.codefellows.org/blog/quick-intro-to-gulp-js

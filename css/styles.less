@@ -17,6 +17,7 @@
 @green-dark: rgb(0,106,50);
 @gray-x-light: rgb(245,245,245);
 @gray-light: rgb(240,240,240);
+@gray-medium-light: rgb(200,200,200);
 @gray-medium: rgb(128,128,128);
 @gray-dark: rgb(70,70,70);
 
@@ -293,8 +294,8 @@ section#content {
   }
   div.risultati-ricerca.active {
     display: block;
-  }
-  div#tpl-risultati-ricerca-edificio-container {
+  }  
+  div.appartamenti.risultati-ricerca {
     background-color: #f0f0f0;
     img.edificio {
       display: block;
@@ -315,6 +316,51 @@ section#content {
       text-align: center;      
       img.legenda {
         margin-left: 15px;
+      }
+    }
+  }
+  div.piani-container {
+    margin-bottom: 2em;
+    div.header {
+      margin-top: 0.5em;
+      &.first {
+        margin-top: 1em;
+      }
+      p, button {
+        display: inline;
+      }
+      a {
+        .link(@red);
+        cursor: pointer;
+      }
+    }
+    div.piani {
+      clear: both;
+    }
+    div.piano {
+      width: 33%;
+      background-color: @gray-medium-light;
+      padding: 1em 15px;
+      margin: 0.5em 0;
+      float: left;
+      a.link-img {
+        display: block;
+        pointer: cursor;
+      }
+      img {
+        max-height: 200px;
+        display: block;
+        pointer: cursor;
+      }
+      button {
+        margin: 0 auto;
+        text-align: center;
+      }
+      h4 {
+        a {
+          .link(@red);
+        }        
+        margin-bottom: 1em;
       }
     }
   }

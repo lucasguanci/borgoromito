@@ -2,6 +2,7 @@ var app = app || {};
 
 (function($) {
   app.ricercaTipologiaPianoView = Backbone.View.extend({
+    className: "piani",
     template: _.template( $('#tpl-risultati-ricerca-tipologia-piano').html() ),
     initialize: function() {
       ;
@@ -9,7 +10,6 @@ var app = app || {};
     events: {},
     render: function(piano,apps) {
       // create modals
-      $("#modals-container").empty();        
       _.each(apps,function(item) {
         var modalView = new app.modalView();
         var cnt = modalView.render( item.toJSON() );

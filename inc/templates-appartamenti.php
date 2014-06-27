@@ -142,13 +142,23 @@
 </script>
 
 <script id="tpl-risultati-ricerca-tipologia-piano" type="text/template">   
-  <a class="link-piano" data-toggle="collapse" data-target="#piano-<%= piano %>">Piano <%= piano %></a> - <%= apps.length %> risultati
-  <button class="btn btn-default" data-toggle="collapse" data-target="#piano-<%= piano %>">visualizza</button>
-  <div class="piano-container">
+  <div class="header">
+    <p>
+      <span class="red">Piano <%= piano %></span> 
+      <i class="fa fa-angle-double-right"></i> <%= apps.length %> risultati
+    </p>
+    <a data-toggle="collapse" data-target="#piano-<%= piano %>">visualizza</a>
+  </div>
+  <div id="piano-<%= piano %>" class="piano-container collapse clear">
     <% for (i=0;i<apps.length;i++) { %>
       <div class="piano">
-        <a data-toggle="modal" data-target="#<%= apps[i].toJSON().nome %>"><%= apps[i].toJSON().nome %></a>
-        <img src="<%= apps[i].toJSON().planimetria %>"/>
+        <h4>
+          <a data-toggle="modal" data-target="#<%= apps[i].toJSON().nome %>"><%= apps[i].toJSON().nome %></a>
+        </h4>
+        <a class="link-img" data-toggle="modal" data-target="#<%= apps[i].toJSON().nome %>">
+          <img src="<%= apps[i].toJSON().planimetria %>"/>
+        </a>
+        <button class="btn btn-default" data-toggle="modal" data-target="#<%= apps[i].toJSON().nome %>">visualizza</button>
       </div>
     <% } %>
   </div>
