@@ -24,6 +24,7 @@ var app = app || {};
       'submit form.admin': 'submitForm'
     },
     render: function() {
+      this.appartamenti.sort();
       this.$el.html( this.template(this.ctype) );
       subview = new app.ctypeView();    
       this.$el.find('#appartamenti div.panel-body').html(subview.render("appartamenti",this.appartamenti));
@@ -117,11 +118,13 @@ var app = app || {};
       });      
       $.getJSON('https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_design/get/_view/all', function(data) {
           var n = data.total_rows;
+          var c = 0; // count getted documents
           _.each(data.rows, function(item, index) {
             // get id
             $.getJSON('https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/'+item.id, function(model) { 
                 self.appartamenti.add(model);
-                if ( index == n-1 ) {
+                c += 1;
+                if ( c >= n ) {
                   loaded.resolve();      
                 }                
               });
