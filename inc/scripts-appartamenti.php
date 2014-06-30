@@ -12,5 +12,7 @@
   <script src="js/views/mainView.js"></script>
   <script src="js/views/ricercaEdificioView.js"></script>
   <script src="js/views/ricercaPianoView.js"></script>
+  <script src="js/views/ricercaTipologiaView.js"></script>
+  <script src="js/views/ricercaTipologiaPianoView.js"></script>
   <script src="js/views/modalView.js"></script>
   <script src="js/appartamenti.js"></script>

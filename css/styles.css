@@ -61,6 +61,7 @@ body {
  */
 nav.navbar-fixed-top {
   /*border-top: solid 1em @magenta;*/
+
 }
 .navbar {
   color: #333333;
@@ -220,6 +221,7 @@ section#content {
   background-color: white;
   padding: 1em 0;
   /*min-height: 35em;*/
+
 }
 section#content h2 {
   color: #b90000;
@@ -271,19 +273,20 @@ section#content div.appartamenti.ricerca.last {
 }
 section#content div.risultati-ricerca {
   /*display: none;*/
+
 }
 section#content div.risultati-ricerca.active {
   display: block;
 }
-section#content div#tpl-risultati-ricerca-edificio-container {
+section#content div.appartamenti.risultati-ricerca {
   background-color: #f0f0f0;
 }
-section#content div#tpl-risultati-ricerca-edificio-container img.edificio {
+section#content div.appartamenti.risultati-ricerca img.edificio {
   display: block;
   float: left;
   padding-right: 15px;
 }
-section#content div#tpl-risultati-ricerca-edificio-container h3.istruzioni {
+section#content div.appartamenti.risultati-ricerca h3.istruzioni {
   padding: 1em 0;
 }
 section#content div#risultati-edificio-piano {
@@ -298,6 +301,66 @@ section#content div#risultati-edificio-piano div.img-piano {
 }
 section#content div#risultati-edificio-piano div.img-piano img.legenda {
   margin-left: 15px;
+}
+section#content div.piani-container {
+  margin-bottom: 2em;
+}
+section#content div.piani-container div.header {
+  margin-top: 0.5em;
+}
+section#content div.piani-container div.header.first {
+  margin-top: 1em;
+}
+section#content div.piani-container div.header p,
+section#content div.piani-container div.header button {
+  display: inline;
+}
+section#content div.piani-container div.header a {
+  color: #b90000;
+  text-decoration: none;
+  border-bottom: 1px dotted #b90000;
+  cursor: pointer;
+}
+section#content div.piani-container div.header a:hover {
+  color: #b90000;
+  border-bottom: none;
+  text-decoration: none;
+}
+section#content div.piani-container div.piani {
+  clear: both;
+}
+section#content div.piani-container div.piano {
+  width: 33%;
+  background-color: #c8c8c8;
+  padding: 1em 15px;
+  margin: 0.5em 0;
+  float: left;
+}
+section#content div.piani-container div.piano a.link-img {
+  display: block;
+  pointer: cursor;
+}
+section#content div.piani-container div.piano img {
+  max-height: 200px;
+  display: block;
+  pointer: cursor;
+}
+section#content div.piani-container div.piano button {
+  margin: 0 auto;
+  text-align: center;
+}
+section#content div.piani-container div.piano h4 {
+  margin-bottom: 1em;
+}
+section#content div.piani-container div.piano h4 a {
+  color: #b90000;
+  text-decoration: none;
+  border-bottom: 1px dotted #b90000;
+}
+section#content div.piani-container div.piano h4 a:hover {
+  color: #b90000;
+  border-bottom: none;
+  text-decoration: none;
 }
 section#content area {
   cursor: pointer;

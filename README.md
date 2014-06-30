@@ -31,11 +31,53 @@ node couchdb2json.js
 # 140625b
 - merged branch _admin_ into _master_
 
-# TODO (140625)
+# 140626
+- on branch _tipologia_, creata ricerca per tipologia
+
+# 140627
+- fixed _errore mainView.js:52_ nella costruzione del vettore edifici, elementi duplicati
+- fixed ricerca per tipologia: testare e creare styling_
+- styling ricerca per tipologia
+- la collection di appartamenti adesso è ordinata alfabeticamente
+- risolto problema async nel recuperare appartamenti
+
+# TODO
+- merge _tipologia_ into _master_
+- creare immagini appartamenti, inserire appartamenti e creare mappe cliccabili piani 
+- gestire caso "nessun risultato"
 - gulp per compilare css, autoprefixer
-- inserire appartamenti e creare mappe cliccabili piani (da inserire in 
-- template)
 
 __GULP__
 https://www.codefellows.org/blog/quick-intro-to-gulp-js
 http://www.sitepoint.com/introduction-gulp-js/
+
+__OOP__
+Ford = function(model) {
+  switch (model) {
+    case 'ka':
+      this.cilindrata = [900];
+      this.posti = 4;
+      break;
+    case 'fiesta':
+      this.cilindrata = [1000,1200];
+      this.posti = 5;
+      break;
+  }
+}
+Ford.prototype.brand = "ford";
+
+var auto_1 = new Ford('ka');
+var auto_2 = new Ford('fiesta');
+
+Opel = {
+  corsa: function() {
+    this.cilindrata = 1000;
+    this.posti = 4;
+    return this;
+  },
+  omega: function() {
+    this.cilindrata = 1600;
+    this.posti = 5;
+    return this;
+  }
+}

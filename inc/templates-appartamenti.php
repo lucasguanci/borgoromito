@@ -37,25 +37,25 @@
     <form role="form" id="form-ricerca-tipologia" class="form-ricerca tipologia">
       <div class="radio">
         <label>
-          <input type="radio" name="tipologia" id="T1" value="T1">
+          <input type="radio" name="tipologia" id="1C" value="1C">
           1 camera
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="tipologia" id="T2" value="T2" checked>
+          <input type="radio" name="tipologia" id="2C" value="2C" checked>
           2 camere
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="tipologia" id="T3" value="T3">
+          <input type="radio" name="tipologia" id="3C" value="3C">
           3 camere
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="tipologia" id="T4" value="T4">
+          <input type="radio" name="tipologia" id="attico" value="attico">
           Attico
         </label>
       </div>
@@ -128,6 +128,40 @@
   <area shape="poly" alt="" coords="143,14, 226,14, 226,55, 218,55, 218,73, 210,73, 210,116, 177,116, 177,121, 143,121, 143,14" href="ed.A-B4-T4.1sx">
   <area shape="poly" alt="" coords="76,114, 76,14, 143,14, 143,121, 111,121, 111,114, 76,114" href="ed.A-A4-T6">
   </map>
+</script>
+
+<script id="tpl-risultati-ricerca-tipologia" type="text/template">
+  <h2>Risultati ricerca per tipologia</h2>
+  <h3><%= edificio.nome %> - <%= nres %> risultati</h3>
+  <p class="descrizione">
+    <img class="edificio" src="<%= edificio.img.src %>" alt="<%= edificio.img.caption %>">
+    <%= edificio.descrizione %>
+  </p>
+  <h3 class="istruzioni clear"><i class="fa fa-angle-double-right"></i> Selezionare un piano dell&#39;edificio</h3>
+  <div class="piani-container"></div>
+</script>
+
+<script id="tpl-risultati-ricerca-tipologia-piano" type="text/template">   
+  <div class="header">
+    <p>
+      <span class="red">Piano <%= piano %></span> 
+      <i class="fa fa-angle-double-right"></i> <%= apps.length %> risultati
+    </p>
+    <a data-toggle="collapse" data-target="#piano-<%= piano %>">visualizza</a>
+  </div>
+  <div id="piano-<%= piano %>" class="piano-container collapse clear">
+    <% for (i=0;i<apps.length;i++) { %>
+      <div class="piano">
+        <h4>
+          <a data-toggle="modal" data-target="#<%= apps[i].toJSON().nome %>"><%= apps[i].toJSON().nome %></a>
+        </h4>
+        <a class="link-img" data-toggle="modal" data-target="#<%= apps[i].toJSON().nome %>">
+          <img src="<%= apps[i].toJSON().planimetria %>"/>
+        </a>
+        <button class="btn btn-default" data-toggle="modal" data-target="#<%= apps[i].toJSON().nome %>">visualizza</button>
+      </div>
+    <% } %>
+  </div>
 </script>
 
 <script id="tpl-modal" type="text/template">
