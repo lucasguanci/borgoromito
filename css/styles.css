@@ -61,7 +61,6 @@ body {
  */
 nav.navbar-fixed-top {
   /*border-top: solid 1em @magenta;*/
-
 }
 .navbar {
   color: #333333;
@@ -221,7 +220,6 @@ section#content {
   background-color: white;
   padding: 1em 0;
   /*min-height: 35em;*/
-
 }
 section#content h2 {
   color: #b90000;
@@ -273,7 +271,6 @@ section#content div.appartamenti.ricerca.last {
 }
 section#content div.risultati-ricerca {
   /*display: none;*/
-
 }
 section#content div.risultati-ricerca.active {
   display: block;
