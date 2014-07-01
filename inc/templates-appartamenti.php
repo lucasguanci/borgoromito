@@ -131,7 +131,22 @@
 </script>
 
 <script id="tpl-risultati-ricerca-tipologia" type="text/template">
-  <h2>Risultati ricerca per tipologia</h2>
+  <div id="tpl-risultati-ricerca-tipologia-header">
+    <h2>Risultati ricerca per tipologia</h2>
+    <ul id="tpl-nav-tabs-container" class="nav nav-tabs" role="tablist">
+      <% for (i=0; i<edifici.length; i++) { %> 
+        <li<% if (i==0) print('class="active"'); %> >
+          <a href="#<%= edifici[i].toJSON().nome %>" role="tab" data-toggle="tab"><%= edifici[i].toJSON().nome %> - <%= nres[i] %> risultati</a>
+        </li>
+      <% } %>    
+    </ul>
+    <div id="tpl-nav-tabs-content-container" class="tab-content">
+      <!-- #tpl-nav-tabs-content -->
+    </div>
+  </div>          
+</script>
+
+<script id="tpl-nav-tabs-content" type="text/template">  
   <h3><%= edificio.nome %> - <%= nres %> risultati</h3>
   <p class="descrizione">
     <img class="edificio" src="<%= edificio.img.src %>" alt="<%= edificio.img.caption %>">

@@ -43,12 +43,23 @@ var app = app || {};
       // res = { A:[{app.1},{app.2},..], C:[{app.1},..]}
       var apps = this.appartamenti.where({tipologia: tipologia});      
       var edifici = [];
-      edifici = _.keys(_.groupBy(apps,function(app){return app.get("edificio")}))
+      keys = _.keys(_.groupBy(apps,function(app){return app.get("edificio")}));
       var self = this;
-      edifici.forEach(function(edificio) {
-        var ricercaTipologiaView = new app.ricercaTipologiaView();
-        self.$el.find("div#tpl-risultati-ricerca-tipologia-container").html( ricercaTipologiaView.render(edificio,apps) );  
+      _.each(keys, function(edificio) {
+        edifici.push(self.edifici.findWhere({edificio: edificio}));
       });
+      var c = new Backbone.Collection(apps);
+      var nres = _.map(edifici, function(edificio){ 
+        return c.where({"edificio":edificio.get("id")}).length;
+      });
+      var ricercaTipologiaView = new app.ricercaTipologiaView();
+      this.$el.find("div#tpl-risultati-ricerca-tipologia-container").html( ricercaTipologiaView.render(edifici,nres,apps) );  
+
+
+      // edifici.forEach(function(edificio) {
+      //   var ricercaTipologiaView = new app.ricercaTipologiaView();
+      //   self.$el.find("div#tpl-risultati-ricerca-tipologia-container").html( ricercaTipologiaView.render(edificio,apps) );  
+      // });
     },
     clearRisultatiRicerca: function() {
       $("div.appartamenti.risultati-ricerca").empty();

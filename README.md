@@ -41,8 +41,13 @@ node couchdb2json.js
 - la collection di appartamenti adesso è ordinata alfabeticamente
 - risolto problema async nel recuperare appartamenti
 
+# 140701
+- merged _tipologia_ (versione 1) into _master_
+- on branch _tipologia_ riscritto il rendering della ricercaper tipologia, da testare e vedere se tutto è ok anche con 2+ edifici
+
 # TODO
-- merge _tipologia_ into _master_
+- testare se ricerca per tipologia è ok anche con 2+ edifici
+- riguardare appunti Enrico e mandare materiale
 - creare immagini appartamenti, inserire appartamenti e creare mappe cliccabili piani 
 - gestire caso "nessun risultato"
 - gulp per compilare css, autoprefixer
