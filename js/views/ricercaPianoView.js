@@ -12,7 +12,7 @@ var app = app || {};
       // render modals and catch click events on area maps
       // ricerca appartamenti appartenenti piano e ritorna collection di appartamenti
       var e = model.edificio;
-      var p = parseInt(piano)+1;
+      var p = parseInt(piano);
       p += "";
       var appartamenti = this.appartamenti.where({"edificio":e,"piano":p});
       // render subview

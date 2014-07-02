@@ -13,13 +13,13 @@ var app = app || {};
       var c = new Backbone.Collection(apps);
       for ( var i=0; i<edifici.length; i++ ) {        
         var appartamenti = c.where({edificio: edifici[i].get("id")});
-        this.renderRisultatiEdificio(edifici[i],nres[i],appartamenti);
+        this.renderRisultatiEdificio(edifici[i],nres[i],appartamenti, i);
       }
       return this.$el;        
     },
-    renderRisultatiEdificio: function(edificio,nres,apps) {
+    renderRisultatiEdificio: function(edificio,nres,apps,i) {
       var edificioView = new app.ricercaTipologiaEdificioView();
-      this.$el.find("#tpl-nav-tabs-content-container").append( edificioView.render(edificio,nres,apps) );
+      this.$el.find("#tpl-nav-tabs-content-container").append( edificioView.render(edificio,nres,apps,i) );
     }
   });
 })(jQuery);

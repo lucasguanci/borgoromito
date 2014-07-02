@@ -45,12 +45,22 @@ node couchdb2json.js
 - merged _tipologia_ (versione 1) into _master_
 - on branch _tipologia_ riscritto il rendering della ricercaper tipologia, da testare e vedere se tutto è ok anche con 2+ edifici
 
+# 140702
+- on branch _tipologia_, completata la nuova vista tipologia e testata con 2 edifici
+- iniziata modifica template modal
+
 # TODO
-- testare se ricerca per tipologia è ok anche con 2+ edifici
+- completare template modal per inserire vista piano etc, va modificato oggetto appartamento e api db per immagine collocazione appartamento nel piano
 - riguardare appunti Enrico e mandare materiale
 - creare immagini appartamenti, inserire appartamenti e creare mappe cliccabili piani 
+- creare galleria immagini (vd. apppunti) (per modal nested in modal vedi pratosarajevotours.local)
+- creare pagine statiche (vd. apppunti)
+- testare ricerca per edificio su Edificio C con piano 0, piano 1, etc
 - gestire caso "nessun risultato"
 - gulp per compilare css, autoprefixer
+
+__MODAL WIDTH__
+http://stackoverflow.com/questions/10169432/how-can-i-change-the-default-width-of-a-twitter-bootstrap-modal-box
 
 __GULP__
 https://www.codefellows.org/blog/quick-intro-to-gulp-js

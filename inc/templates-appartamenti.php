@@ -135,8 +135,8 @@
     <h2>Risultati ricerca per tipologia</h2>
     <ul id="tpl-nav-tabs-container" class="nav nav-tabs" role="tablist">
       <% for (i=0; i<edifici.length; i++) { %> 
-        <li<% if (i==0) print('class="active"'); %> >
-          <a href="#<%= edifici[i].toJSON().nome %>" role="tab" data-toggle="tab"><%= edifici[i].toJSON().nome %> - <%= nres[i] %> risultati</a>
+        <li <% if (i==0) print('class="active"'); %> >
+          <a href="#tab-edificio-<%= edifici[i].toJSON().id %>" role="tab" data-toggle="tab"><%= edifici[i].toJSON().nome %> - <%= nres[i] %> risultati</a>
         </li>
       <% } %>    
     </ul>
@@ -147,13 +147,14 @@
 </script>
 
 <script id="tpl-nav-tabs-content" type="text/template">  
-  <h3><%= edificio.nome %> - <%= nres %> risultati</h3>
-  <p class="descrizione">
-    <img class="edificio" src="<%= edificio.img.src %>" alt="<%= edificio.img.caption %>">
-    <%= edificio.descrizione %>
-  </p>
-  <h3 class="istruzioni clear"><i class="fa fa-angle-double-right"></i> Selezionare un piano dell&#39;edificio</h3>
-  <div class="piani-container"></div>
+  <div class="tab-pane <% if (index==0) print('active') %>" id="tab-edificio-<%= edificio.id %>">    
+    <p class="descrizione">
+      <img class="edificio" src="<%= edificio.img.src %>" alt="<%= edificio.img.caption %>">
+      <%= edificio.descrizione %>
+    </p>
+    <h3 class="istruzioni clear"><i class="fa fa-angle-double-right"></i> Selezionare un piano dell&#39;edificio</h3>
+    <div id="piani-container-<%=edificio.id%>" class="piani-container"></div>
+  </div>
 </script>
 
 <script id="tpl-risultati-ricerca-tipologia-piano" type="text/template">   
@@ -177,6 +178,7 @@
       </div>
     <% } %>
   </div>
+  <div class="clear"></div>
 </script>
 
 <script id="tpl-modal" type="text/template">
@@ -191,26 +193,34 @@
         </h4>
       </div>
       <div class="modal-body">
+        <h5>Posizione</h5>
         <p class="edificio">
           Edificio <%= app.edificio %> - piano <%= app.piano %>
+          <br>
+          <a href="#">Visualizza galleria immagini Edificio <%= app.edificio %></a>
         </p>
-        <img src="<%= app.planimetria %>">
+        <img class="piano" src="">
+        <img class="planimetria" src="<%= app.planimetria %>">
+        <h5>Superficie</h5>
         <p class="superficie">
           sup. LORDA: <%= app.superficie.lorda %> mq.<br>
           sup. logge e balconi: <%= app.superficie.logge %> mq.<br>
           sup. CONVENZIONALE: <%= app.superficie.convenzionale %> mq.
         </p>
+        <h5>Camere</h5>
         <p class="camere">
           <% for ( i=0; i<app.camere.length; i++ ) { %>
             <%= app.camere[i] %><br>
           <% } %>
         </p>
+        <h5>Bagni</h5>
         <p class="bagno">
           <% for ( i=0; i<app.bagni.length; i++ ) { %>
             <%= app.bagni[i] %><br>
           <% } %>
         </p>
         <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+        <a class="btn btn-default" href="#">Scarica PDF</a>
       </div>
     </div>
   </div>

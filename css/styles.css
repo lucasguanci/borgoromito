@@ -275,6 +275,26 @@ section#content div.risultati-ricerca {
   /*display: none;*/
 
 }
+section#content div.risultati-ricerca div.tab-pane {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 1em 15px;
+  margin-bottom: 1em;
+}
+section#content div.risultati-ricerca a[role="tab"] {
+  color: #b90000;
+  text-decoration: none;
+  border-bottom: 1px dotted #b90000;
+  font-weight: bold;
+  border-bottom: none;
+  cursor: pointer;
+}
+section#content div.risultati-ricerca a[role="tab"]:hover {
+  color: #b90000;
+  border-bottom: none;
+  text-decoration: none;
+}
 section#content div.risultati-ricerca.active {
   display: block;
 }
@@ -331,7 +351,7 @@ section#content div.piani-container div.piani {
 }
 section#content div.piani-container div.piano {
   width: 33%;
-  background-color: #c8c8c8;
+  background-color: #f0f0f0;
   padding: 1em 15px;
   margin: 0.5em 0;
   float: left;
@@ -344,6 +364,7 @@ section#content div.piani-container div.piano img {
   max-height: 200px;
   display: block;
   pointer: cursor;
+  margin: 0 auto;
 }
 section#content div.piani-container div.piano button {
   margin: 0 auto;
@@ -368,7 +389,26 @@ section#content area {
 section#content div.modal img {
   display: block;
   margin: 0 auto;
+  text-align: left;
+}
+section#content div.modal img.planimetria {
   text-align: center;
+}
+section#content div.modal p {
+  margin-top: 0;
+}
+section#content div.modal p.edificio a {
+  color: #b90000;
+  text-decoration: none;
+  border-bottom: 1px dotted #b90000;
+}
+section#content div.modal p.edificio a:hover {
+  color: #b90000;
+  border-bottom: none;
+  text-decoration: none;
+}
+section#content div.modal h5 {
+  margin-bottom: 0;
 }
 /**
  * News

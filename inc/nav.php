@@ -18,18 +18,21 @@
               </a>
             </div>
             <div class="collapse navbar-collapse" id="header-right">
-              <p class="claim">
+              <p class="claim">                
                 <span class="subtitle">Complesso residenziale BorgoRomito</span>
               </p>
               <p class="menu">
                 <span class="menu-item">
-                  <a href="appartamenti.php">Gli appartamenti</a>
+                  <a href="borgo-romito-prato-appartamenti.php">Gli appartamenti</a>
                 </span>
                 <span class="menu-item">
-                  <a href="contatti.php">Ufficio vendite</a>
+                  <a href="borgo-romito-prato-galleria-fotografica.php">Galleria fotografica</a>
+                </span>
+                <span class="menu-item">
+                  <a href="borgo-romito-prato-ufficio-vendite.php">Ufficio vendite</a>
                 </span>
                 <span class="menu-item last">
-                  <a href="#">Progetto BorgoRomito</a>
+                  <a href="borgo-romito-prato-mutuo-agevolato.php">Mutuo agevolato</a>
                 </span>
               </p>
             </div>
