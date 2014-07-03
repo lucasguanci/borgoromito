@@ -91,6 +91,7 @@ var app = app || {};
           formData.bagni[0] = $(e.target).find('input[name="bagno_1"]').val();
           formData.bagni[1] = $(e.target).find('input[name="bagno_2"]').val();
           formData.planimetria = $(e.target).find('input[name="planimetria"]').val();
+          formData.planimetria_piano = $(e.target).find('input[name="planimetria_piano"]').val();
           break;
       }
       // check if CREATE or UPDATE      

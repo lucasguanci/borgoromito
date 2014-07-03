@@ -14,8 +14,7 @@ var app = app || {};
       'change input[name="edificio"]': 'ricercaEdificio',
       'click #btn-ricerca-tipologia': 'ricercaTipologia',
       'change input[name="tipologia"]': 'ricercaTipologia',
-      'click #btn-ricerca-appartamento': 'ricercaAppartamento',
-      'click button.test': 'ricercaEdificio'
+      'click #btn-ricerca-appartamento': 'ricercaAppartamento'
     },
     render: function() {
       this.$el.html( this.template() );
@@ -60,6 +59,18 @@ var app = app || {};
       //   var ricercaTipologiaView = new app.ricercaTipologiaView();
       //   self.$el.find("div#tpl-risultati-ricerca-tipologia-container").html( ricercaTipologiaView.render(edificio,apps) );  
       // });
+    },
+    ricercaAppartamento: function(e) {
+      e.preventDefault();
+      var id = $(e.target).parent().find("input").val();
+      var appartamento = this.appartamenti.findWhere({nome: id});
+      this.clearRisultatiRicerca();
+      var modalView = new app.modalView();
+      var cnt = modalView.render( appartamento.toJSON() );
+      $("#modals-container").append( cnt );   
+      $("#"+id).modal('show');     
+
+      // show modal
     },
     clearRisultatiRicerca: function() {
       $("div.appartamenti.risultati-ricerca").empty();

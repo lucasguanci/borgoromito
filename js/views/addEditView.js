@@ -21,7 +21,8 @@ var app = app || {};
             data.camera_2 = model.camere[1];
             data.bagno_1 = model.bagni[0];
             data.bagno_2 = model.bagni[1];
-            data.planimetria = model.planimetria;            
+            data.planimetria = model.planimetria;
+            data.planimetria_piano = model.planimetria_piano; 
           }
           this.$el.html( tpl({model: data, ctype: ctype}));
           return this.$el;

@@ -69,7 +69,7 @@
     <form role="form" id="form-ricerca-appartamento" class="form-ricerca appartamento">
       <div class="form-group">
         <label for="id-appartamento">Identificativo appartamento</label>
-        <input type="text" class="form-control" id="id-appartamento" placeholder="ed.C-CT-T2sx">
+        <input type="text" class="form-control" id="id-appartamento" placeholder="ed-C-CT-T1sx">
       </div>
       <button id="btn-ricerca-appartamento" type="submit" class="btn btn-default">Prosegui</button>
     </form>
@@ -193,13 +193,14 @@
         </h4>
       </div>
       <div class="modal-body">
-        <h5>Posizione</h5>
+        <h5>Edificio</h5>
+        <a class="btn btn-default" href="#">galleria immagini</a>
         <p class="edificio">
-          Edificio <%= app.edificio %> - piano <%= app.piano %>
-          <br>
-          <a href="#">Visualizza galleria immagini Edificio <%= app.edificio %></a>
+          Edificio <%= app.edificio %> - piano <%= app.piano %>          
         </p>
-        <img class="piano" src="">
+        <h5>Posizione nel piano</h5>
+        <img class="piano" src="<%= app.planimetria_piano %>" >
+        <h5>Planimetria appartamento</h5>
         <img class="planimetria" src="<%= app.planimetria %>">
         <h5>Superficie</h5>
         <p class="superficie">
