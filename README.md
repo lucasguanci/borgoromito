@@ -53,8 +53,11 @@ node couchdb2json.js
 - creata vista _ricerca diretta_
 - completato template modal per inserire vista piano etc, modificato oggetto appartamento e api db per immagine collocazione appartamento nel piano
 
+# 140704
+- modal, inserito campo descrizione e bottone per galleria immagini
+- app.Appartamenti (la collection) adesso legge i dati da appartamenti.json
+
 # TODO
-- modal, inserire campo descrizione e bottone per galleria immagini
 - creare immagini appartamenti, inserire appartamenti e creare mappe cliccabili piani 
 - creare galleria immagini (vd. apppunti) (per modal nested in modal vedi pratosarajevotours.local)
 - creare pagine statiche (vd. apppunti)

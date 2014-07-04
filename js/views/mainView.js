@@ -6,8 +6,9 @@ var app = app || {};
     template: _.template( $('#tpl-ricerca').html() ),
     initialize: function() {
       this.edifici = new app.Edifici(app.Data.Edifici);
-      this.appartamenti = new app.Appartamenti(app.Data.Appartamenti);
-      this.render();
+      this.appartamenti = new app.Appartamenti();
+      this.appartamenti.fetch({reset: true});
+      this.listenTo(this.appartamenti,'reset',this.render);
     },
     events: {
       'click #btn-ricerca-edificio': 'ricercaEdificio',
@@ -17,6 +18,7 @@ var app = app || {};
       'click #btn-ricerca-appartamento': 'ricercaAppartamento'
     },
     render: function() {
+      console.log('rendered');
       this.$el.html( this.template() );
     },
     ricercaEdificio: function(e) {

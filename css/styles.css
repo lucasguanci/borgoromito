@@ -61,6 +61,7 @@ body {
  */
 nav.navbar-fixed-top {
   /*border-top: solid 1em @magenta;*/
+
 }
 .navbar {
   color: #333333;
@@ -220,6 +221,7 @@ section#content {
   background-color: white;
   padding: 1em 0;
   /*min-height: 35em;*/
+
 }
 section#content h2 {
   color: #b90000;
@@ -271,6 +273,7 @@ section#content div.appartamenti.ricerca.last {
 }
 section#content div.risultati-ricerca {
   /*display: none;*/
+
 }
 section#content div.risultati-ricerca div.tab-pane {
   background-color: white;
@@ -386,13 +389,11 @@ section#content area {
 section#content div.modal img {
   display: block;
   margin: 0 auto;
-  text-align: left;
-}
-section#content div.modal img.planimetria {
   text-align: center;
 }
 section#content div.modal p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 section#content div.modal p.edificio a {
   color: #b90000;
@@ -404,8 +405,20 @@ section#content div.modal p.edificio a:hover {
   border-bottom: none;
   text-decoration: none;
 }
+section#content div.modal p.bagno {
+  margin-bottom: 2em;
+}
 section#content div.modal h5 {
+  margin-top: 1em;
   margin-bottom: 0;
+}
+section#content div.modal .btn-default {
+  background-color: #b90000;
+  color: white;
+}
+section#content div.modal .btn-default:hover {
+  background-color: white;
+  color: #b90000;
 }
 /**
  * News

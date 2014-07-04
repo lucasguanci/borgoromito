@@ -14,6 +14,7 @@ var app = app || {};
             data.edificio = model.edificio;
             data.tipologia = model.tipologia;
             data.piano = model.piano;
+            data.descrizione = model.descrizione;
             data.superficie_lorda = model.superficie.lorda;
             data.superficie_logge = model.superficie.logge;
             data.superficie_convenzionale = model.superficie.convenzionale;

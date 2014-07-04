@@ -65,6 +65,11 @@ var app = app || {};
         var m = this.appartamenti.findWhere({_id: model});
         subview = new app.addEditView();
         self.$el.find('div.cnt[data-model="'+model+'"]').empty().append(subview.render(ctype, m.toJSON()));
+        // enable CKeditor
+        self.$el.find('textarea').each(function(i,item) {
+          var id = $(this).attr('name');
+          CKEDITOR.replace(id);
+        });
       }
     },
     submitForm: function(e) {
@@ -80,6 +85,7 @@ var app = app || {};
           formData.edificio = $(e.target).find('input[name="edificio"]').val();
           formData.piano = $(e.target).find('input[name="piano"]').val();
           formData.tipologia = $(e.target).find('input[name="tipologia"]').val();
+          formData.descrizione = $(e.target).find('textarea[name="descrizione"]').val();
           formData.superficie = {};
           formData.superficie.lorda = $(e.target).find('input[name="superficie_lorda"]').val();
           formData.superficie.logge = $(e.target).find('input[name="superficie_logge"]').val();

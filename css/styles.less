@@ -382,21 +382,31 @@ section#content {
     img {
       display: block;
       margin: 0 auto;
-      text-align: left;      
-    }
-    img.planimetria {
       text-align: center;      
     }
     p {
       margin-top: 0;
+      margin-bottom: 0;
     }
     p.edificio {
       a {
         .link(@red);
       }
     }
+    p.bagno {
+      margin-bottom: 2em;
+    }
     h5 {
+      margin-top: 1em;
       margin-bottom: 0;
+    }
+    .btn-default {
+      background-color: @red;
+      color: white;
+      &:hover {
+        background-color: white;
+        color: @red;        
+      };
     }
   }
 }

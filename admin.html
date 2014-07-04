@@ -108,6 +108,9 @@
       <!-- piano -->
       <label for="piano">piano</label>
       <input type="text" class="form-control" name="piano" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.piano) !== "undefined" ) { %> value="<%= model.piano %>" <% } %> />
+      <!-- descrizione -->
+      <label for="descrizione">descrizione</label>
+      <textarea class="form-control" name="descrizione" rows="10"><% if ( typeof(model)!=="undefined" && typeof(model.descrizione) !== "undefined" ) { %><%=model.descrizione%> <% } %></textarea>
       <!-- superficie_lorda -->
       <label for="superficie_lorda">superficie_lorda</label>
       <input type="text" class="form-control" name="superficie_lorda" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.superficie_lorda) !== "undefined" ) { %> value="<%= model.superficie_lorda %>" <% } %> />
@@ -145,6 +148,7 @@
   <script src="js/lib/underscore.js"></script>
   <script src="js/lib/backbone.js"></script>
   <script type="text/javascript" src="js/lib/backbone.localStorage.js"></script>
+  <script src="js/lib/ckeditor/ckeditor.js"></script> 
   <!-- BorgoRomito Admin -->
   <script src="js/models/edificio.js"></script>
   <script src="js/models/appartamento.js"></script>
@@ -153,7 +157,6 @@
   <script src="js/routers/adminRouter.js"></script>
   <script src="js/views/adminView.js"></script>
   <script src="js/views/ctypeView.js"></script>
-  <script src="js/views/adminModelView.js"></script>
   <script src="js/views/addEditView.js"></script>
   <script src="js/admin.js"></script>
   <!-- /scripts -->

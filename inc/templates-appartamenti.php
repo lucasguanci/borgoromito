@@ -69,7 +69,7 @@
     <form role="form" id="form-ricerca-appartamento" class="form-ricerca appartamento">
       <div class="form-group">
         <label for="id-appartamento">Identificativo appartamento</label>
-        <input type="text" class="form-control" id="id-appartamento" placeholder="ed-C-CT-T1sx">
+        <input type="text" class="form-control" id="id-appartamento" placeholder="edC-CT-T1sx">
       </div>
       <button id="btn-ricerca-appartamento" type="submit" class="btn btn-default">Prosegui</button>
     </form>
@@ -110,23 +110,23 @@
   </div>
   <!-- edificio-A piano-1 -->
   <map name="edificio-A-piano-1">
-  <area shape="poly" alt="" coords="418,84, 418,63, 496,63, 496,77, 484,77, 484,114, 407,114, 407,84, 418,84" data-toggle="modal" data-target="#ed-A-C1-T11" href="#tpl-risultati-ricerca-edificio-container">
-  <area shape="poly" alt="" coords="392,12, 484,12, 484,49, 496,49, 496,63, 418,63, 418,71, 399,71, 399,53, 392,53, 392,12" data-toggle="modal" data-target="#ed-A-C1-T10" href="#tpl-risultati-ricerca-edificio-container">
-  <area shape="poly" alt="" coords="4,86, 9,86, 9,53, 61,53, 61,71, 63,71, 63,121, 4,121, 4,86" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#ed-A-A1-T2">
-  <area shape="poly" alt="" coords="4,121, 4,155, 9,155, 9,188, 111,188, 111,112, 63,112, 63,121, 4,121" data-toggle="modal" data-target="#ed-A-A1-T1" href="#tpl-risultati-ricerca-edificio-container">
-  <area shape="poly" alt="" coords="309,12, 392,12, 392,53, 384,53, 384,71, 376,71, 376,114, 343,114, 343,120, 309,120, 309,12" data-toggle="modal" data-target="#ed-A-C1-T4sx" href="#tpl-risultati-ricerca-edificio-container">
-  <area shape="poly" alt="" coords="226,12, 309,12, 309,120, 274,120, 274,114, 241,114, 241,71, 234,71, 234,53, 226,53, 226,12" data-toggle="modal" data-target="#ed-A-B1-T4-1dx" href="#tpl-risultati-ricerca-edificio-container">
-  <area shape="poly" alt="" coords="143,12, 226,12, 226,53, 218,53, 218,71, 211,71, 211,114, 177,114, 177,120, 143,120, 143,12" data-toggle="modal" data-target="#ed-A-B1-T4-1sx" href="#tpl-risultati-ricerca-edificio-container">
-  <area shape="poly" alt="" coords="77,71, 77,12, 143,12, 143,120, 111,120, 111,71, 77,71" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#ed-A-A1-T3">
+  <area shape="poly" alt="" coords="418,84, 418,63, 496,63, 496,77, 484,77, 484,114, 407,114, 407,84, 418,84" data-toggle="modal" data-target="#edA-C1-T11" href="#tpl-risultati-ricerca-edificio-container">
+  <area shape="poly" alt="" coords="392,12, 484,12, 484,49, 496,49, 496,63, 418,63, 418,71, 399,71, 399,53, 392,53, 392,12" data-toggle="modal" data-target="#edA-C1-T10" href="#tpl-risultati-ricerca-edificio-container">
+  <area shape="poly" alt="" coords="4,86, 9,86, 9,53, 61,53, 61,71, 63,71, 63,121, 4,121, 4,86" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edA-A1-T2">
+  <area shape="poly" alt="" coords="4,121, 4,155, 9,155, 9,188, 111,188, 111,112, 63,112, 63,121, 4,121" data-toggle="modal" data-target="#edA-A1-T1" href="#tpl-risultati-ricerca-edificio-container">
+  <area shape="poly" alt="" coords="309,12, 392,12, 392,53, 384,53, 384,71, 376,71, 376,114, 343,114, 343,120, 309,120, 309,12" data-toggle="modal" data-target="#edA-C1-T4sx" href="#tpl-risultati-ricerca-edificio-container">
+  <area shape="poly" alt="" coords="226,12, 309,12, 309,120, 274,120, 274,114, 241,114, 241,71, 234,71, 234,53, 226,53, 226,12" data-toggle="modal" data-target="#edA-B1-T4-1dx" href="#tpl-risultati-ricerca-edificio-container">
+  <area shape="poly" alt="" coords="143,12, 226,12, 226,53, 218,53, 218,71, 211,71, 211,114, 177,114, 177,120, 143,120, 143,12" data-toggle="modal" data-target="#edA-B1-T4-1sx" href="#tpl-risultati-ricerca-edificio-container">
+  <area shape="poly" alt="" coords="77,71, 77,12, 143,12, 143,120, 111,120, 111,71, 77,71" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edA-A1-T3">
   </map>
   <!-- edificio-A piano-4 -->
   <map name="edificio-A-piano-4">
-  <area shape="poly" alt="" coords="418,86, 418,65, 496,65, 496,79, 483,79, 483,116, 407,116, 407,86, 418,86" href="ed.A-C4-T11">
-  <area shape="poly" alt="" coords="374,14, 483,14, 483,51, 496,51, 496,65, 418,65, 418,73, 399,73, 399,55, 374,55, 374,14" href="ed.A-C4-T10">
-  <area shape="poly" alt="" coords="309,14, 374,14, 374,55, 384,55, 384,73, 376,73, 376,116, 343,116, 343,121, 309,121, 309,14" href="ed.A-C4-T9">
-  <area shape="poly" alt="" coords="226,14, 309,14, 309,121, 274,121, 274,116, 241,116, 241,73, 233,73, 233,55, 226,55, 226,14" href="ed.A-B4-T4.1dx">
-  <area shape="poly" alt="" coords="143,14, 226,14, 226,55, 218,55, 218,73, 210,73, 210,116, 177,116, 177,121, 143,121, 143,14" href="ed.A-B4-T4.1sx">
-  <area shape="poly" alt="" coords="76,114, 76,14, 143,14, 143,121, 111,121, 111,114, 76,114" href="ed.A-A4-T6">
+  <area shape="poly" alt="" coords="418,86, 418,65, 496,65, 496,79, 483,79, 483,116, 407,116, 407,86, 418,86" href="#edA-C4-T11">
+  <area shape="poly" alt="" coords="374,14, 483,14, 483,51, 496,51, 496,65, 418,65, 418,73, 399,73, 399,55, 374,55, 374,14" href="#edA-C4-T10">
+  <area shape="poly" alt="" coords="309,14, 374,14, 374,55, 384,55, 384,73, 376,73, 376,116, 343,116, 343,121, 309,121, 309,14" href="#edA-C4-T9">
+  <area shape="poly" alt="" coords="226,14, 309,14, 309,121, 274,121, 274,116, 241,116, 241,73, 233,73, 233,55, 226,55, 226,14" href="#edA-B4-T4.1dx">
+  <area shape="poly" alt="" coords="143,14, 226,14, 226,55, 218,55, 218,73, 210,73, 210,116, 177,116, 177,121, 143,121, 143,14" href="#edA-B4-T4.1sx">
+  <area shape="poly" alt="" coords="76,114, 76,14, 143,14, 143,121, 111,121, 111,114, 76,114" href="#edA-A4-T6">
   </map>
 </script>
 
@@ -193,13 +193,22 @@
         </h4>
       </div>
       <div class="modal-body">
-        <h5>Edificio</h5>
-        <a class="btn btn-default" href="#">galleria immagini</a>
-        <p class="edificio">
-          Edificio <%= app.edificio %> - piano <%= app.piano %>          
-        </p>
+        <div class="modal-body-header">
+          <h5>Edificio</h5>
+          <div class="col-left" style="width: 45%; float:left; padding: 6px 0">            
+            <p class="edificio">
+              Edificio <%= app.edificio %> - piano <%= app.piano %>          
+            </p>
+          </div>
+          <div class="col-right" style="width: 45%; margin-left: 55%;">
+            <a class="btn btn-default" href="#" style="float: right">galleria immagini</a>            
+          </div>
+          <div class="clear"></div>
+        </div>
         <h5>Posizione nel piano</h5>
         <img class="piano" src="<%= app.planimetria_piano %>" >
+        <h5>Descrizione appartamento</h5>
+        <p class="descrizione"><%= app.descrizione %></h5>
         <h5>Planimetria appartamento</h5>
         <img class="planimetria" src="<%= app.planimetria %>">
         <h5>Superficie</h5>
