@@ -4,6 +4,7 @@
  */
 ?>
   <script src="js/lib/backbone.js"></script>
+  <script src="js/galleria-immagini.js"></script>
   <script src="js/models/edificio.js"></script>
   <script src="js/models/appartamento.js"></script>
   <script src="js/collections/edifici.js"></script>

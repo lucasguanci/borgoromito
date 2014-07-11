@@ -26,7 +26,7 @@
                   <a href="borgo-romito-prato-appartamenti.php">Gli appartamenti</a>
                 </span>
                 <span class="menu-item">
-                  <a href="borgo-romito-prato-galleria-fotografica.php">Galleria fotografica</a>
+                  <a class="galleria-immagini" data-edificio="all">Galleria fotografica</a>
                 </span>
                 <span class="menu-item">
                   <a href="borgo-romito-prato-ufficio-vendite.php">Ufficio vendite</a>

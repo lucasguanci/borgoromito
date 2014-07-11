@@ -57,7 +57,18 @@ node couchdb2json.js
 - modal, inserito campo descrizione e bottone per galleria immagini
 - app.Appartamenti (la collection) adesso legge i dati da appartamenti.json
 
+# 140707
+- iniziato a lavorare alla galleria fotografica
+
+# 140708
+- sistemato case edificio (A,C, all,..)
+
+# 140711
+- sistemata galleria immagini, adesso è contenuta in galleria-immagini.php e galleria-immagini.js
+
 # TODO
+- modal.toggle() non funziona ancora, l'evento click in modalView.js sembra non essere raccolto
+- a volte ci sono ancora pb. con i tempi dello slideshow, che ci siano troppe istanze di Carousel?
 - creare immagini appartamenti, inserire appartamenti e creare mappe cliccabili piani 
 - creare galleria immagini (vd. apppunti) (per modal nested in modal vedi pratosarajevotours.local)
 - creare pagine statiche (vd. apppunti)
@@ -100,5 +111,12 @@ Opel = {
     this.cilindrata = 1600;
     this.posti = 5;
     return this;
+  }
+}
+
+a.Fn = {
+  sayHello: function(g) { 
+    this.g = g || "hello world"; 
+    return g;
   }
 }

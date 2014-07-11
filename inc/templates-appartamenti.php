@@ -1,3 +1,8 @@
+<?php
+/**
+ * Templates appartamenti
+ */
+?>
 <script type="text/template" id="tpl-ricerca">
   <!-- Ricerca per edificio -->
   <div class="col-md-4 appartamenti ricerca edificio first">
@@ -82,7 +87,8 @@
   <h3><%= edificio.nome %></h3>
   <p class="descrizione">
     <img class="edificio" src="<%= edificio.img.src %>" alt="<%= edificio.img.caption %>">
-    <%= edificio.descrizione %>
+    <%= edificio.descrizione %><br>
+    <a class="galleria-immagini" data-edificio="<%= edificio.id %>">galleria immagini <%= edificio.nome %></a>
   </p>
   <h3 class="istruzioni clear"><i class="fa fa-angle-double-right"></i> Selezionare un piano dell&#39;edificio</h3>
   <form id="form-edificio-seleziona-piano" class="form-inline clear" role="form">
@@ -150,7 +156,8 @@
   <div class="tab-pane <% if (index==0) print('active') %>" id="tab-edificio-<%= edificio.id %>">    
     <p class="descrizione">
       <img class="edificio" src="<%= edificio.img.src %>" alt="<%= edificio.img.caption %>">
-      <%= edificio.descrizione %>
+      <%= edificio.descrizione %><br>
+      <a class="galleria-immagini" data-edificio="<%= edificio.id %>">galleria immagini <%= edificio.nome %></a>
     </p>
     <h3 class="istruzioni clear"><i class="fa fa-angle-double-right"></i> Selezionare un piano dell&#39;edificio</h3>
     <div id="piani-container-<%=edificio.id%>" class="piani-container"></div>
@@ -201,7 +208,7 @@
             </p>
           </div>
           <div class="col-right" style="width: 45%; margin-left: 55%;">
-            <a class="btn btn-default" href="#" style="float: right">galleria immagini</a>            
+            <a id="pippo" class="btn btn-default galleria-immagini galleria-immagini-scheda" data-dismiss="modal" data-modal-id="#<%= app.nome %>" style="float: right" data-edificio="<%= app.edificio %>">galleria immagini</a>
           </div>
           <div class="clear"></div>
         </div>

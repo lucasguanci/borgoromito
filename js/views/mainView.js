@@ -18,7 +18,7 @@ var app = app || {};
       'click #btn-ricerca-appartamento': 'ricercaAppartamento'
     },
     render: function() {
-      console.log('rendered');
+      console.log('MainView rendered');
       this.$el.html( this.template() );
     },
     ricercaEdificio: function(e) {

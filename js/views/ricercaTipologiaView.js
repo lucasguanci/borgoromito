@@ -14,6 +14,7 @@ var app = app || {};
       for ( var i=0; i<edifici.length; i++ ) {        
         var appartamenti = c.where({edificio: edifici[i].get("id")});
         this.renderRisultatiEdificio(edifici[i],nres[i],appartamenti, i);
+        app.Fn.initGallery();
       }
       return this.$el;        
     },

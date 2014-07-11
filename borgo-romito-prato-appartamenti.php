@@ -68,6 +68,11 @@
       <!-- tpl-modal -->
     </div>
     <!-- /Modals appartamenti -->
+
+    <!-- Galleria immagini -->
+    <?php include_once 'inc/galleria-immagini.php' ?>
+    <!-- /Galleria immagini -->    
+    
     <!-- /appartamenti -->
   </section>
 

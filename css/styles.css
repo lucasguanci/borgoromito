@@ -212,6 +212,18 @@ div#news-slider div.carousel-caption {
   z-index: 2;
 }
 /**
+ * Galleria fotografica
+**/
+div#modal-galleria-fotografica div.carousel {
+  margin-top: 0;
+}
+div#modal-galleria-fotografica div.modal-footer {
+  margin-top: 0;
+}
+div#modal-galleria-fotografica .carousel-control {
+  display: block;
+}
+/**
  * Content
 **/
 section#content {
@@ -305,6 +317,16 @@ section#content div.appartamenti.risultati-ricerca img.edificio {
   display: block;
   float: left;
   padding-right: 15px;
+}
+section#content div.appartamenti.risultati-ricerca a.galleria-immagini {
+  color: #b90000;
+  text-decoration: none;
+  border-bottom: 1px dotted #b90000;
+}
+section#content div.appartamenti.risultati-ricerca a.galleria-immagini:hover {
+  color: #b90000;
+  border-bottom: none;
+  text-decoration: none;
 }
 section#content div.appartamenti.risultati-ricerca h3.istruzioni {
   padding: 1em 0;

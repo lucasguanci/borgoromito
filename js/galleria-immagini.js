@@ -55,11 +55,8 @@ app.Fn = {
       interval: 2000
     });
   }
-}
+};
 
-$(document).ready(function() {
-  $("area").on('click',function(e) {
-    e.preventDefautl();
-  });
-  //app.Fn.initGallery();
-})
+(function($){
+  app.Fn.initGallery();
+})(jQuery)
