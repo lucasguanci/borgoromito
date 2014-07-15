@@ -5,6 +5,7 @@ app.Data.Carousel = {"A": [{"alt":"Edificio A","caption":"Edificio A","src":"ima
 
 app.Fn = {
   initGallery: function() {
+    console.log("init gallery");
     if ( $("a.galleria-immagini").length>0 ) {
       $("a.galleria-immagini").on('click', function(e) {
         e.preventDefault();

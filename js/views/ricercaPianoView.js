@@ -22,8 +22,6 @@ var app = app || {};
         var cnt = modalView.render( item.toJSON() );
         $("#modals-container").append( cnt );        
       });
-      // init Galleria fotografica
-      app.Fn.initGallery();
       // display piano
       this.$el.html( this.template({edificio: model, piano: piano}) );
       return this.$el;        

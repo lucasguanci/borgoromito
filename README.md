@@ -66,15 +66,31 @@ node couchdb2json.js
 # 140711
 - sistemata galleria immagini, adesso è contenuta in galleria-immagini.php e galleria-immagini.js
 
+# 140714
+- completato deleteCouchDB()
+
+# 140715
+- tolto il fetch della collection da file (non supportato da IIS), gli appartamenti vengono inclusi in appartamenti.js
+- risolto problema con attivazione modal utilizzando modal.toggle() in modalView.js dove si raccolgono i click della scheda
+
 # TODO
-- modal.toggle() non funziona ancora, l'evento click in modalView.js sembra non essere raccolto
+- edificio C >> posizione nel piano piano 5, copiare imgs pos.piano 2,3, copiare e inserire in templates le mappe cliccabili, creare schede app. edificio C
+- ricerca per tipologia >> attico è codificato con "A" in app.Data.Appartamenti
 - a volte ci sono ancora pb. con i tempi dello slideshow, che ci siano troppe istanze di Carousel?
 - creare immagini appartamenti, inserire appartamenti e creare mappe cliccabili piani 
-- creare galleria immagini (vd. apppunti) (per modal nested in modal vedi pratosarajevotours.local)
 - creare pagine statiche (vd. apppunti)
 - testare ricerca per edificio su Edificio C con piano 0, piano 1, etc
 - gestire caso "nessun risultato"
 - gulp per compilare css, autoprefixer
+
+__CouchDB__
+<!-- update appartamenti.json -->
+curl https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_all_docs/\?include_docs=true > appartamenti.couchdb 
+node couchdb2json.js
+<!-- COPY document -->
+curl -X GET https://brontoluke:rio2016@minimalg.iriscouch.com/_uuids?count=10
+<!-- eda-c1-t13 -->
+curl -X COPY https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/043cb888c03c0c5429ccba74af001a7e -H "Destination: 8f6b1f25b69081d9270b2f27a5001bda"
 
 __MODAL WIDTH__
 http://stackoverflow.com/questions/10169432/how-can-i-change-the-default-width-of-a-twitter-bootstrap-modal-box

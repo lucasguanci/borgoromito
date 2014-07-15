@@ -69,12 +69,14 @@
     </div>
     <!-- /Modals appartamenti -->
 
-    <!-- Galleria immagini -->
-    <?php include_once 'inc/galleria-immagini.php' ?>
-    <!-- /Galleria immagini -->    
-    
     <!-- /appartamenti -->
   </section>
+
+  <!-- galleria immagini -->
+  <section class="galleria">
+    <?php include_once 'inc/galleria-immagini.php'; ?>
+  </section>
+  <!-- /galleria immagini -->
 
   <section id="news" class="news">
     <?php include_once 'inc/news.php' ?>

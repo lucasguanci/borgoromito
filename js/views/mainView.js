@@ -7,8 +7,12 @@ var app = app || {};
     initialize: function() {
       this.edifici = new app.Edifici(app.Data.Edifici);
       this.appartamenti = new app.Appartamenti();
-      this.appartamenti.fetch({reset: true});
       this.listenTo(this.appartamenti,'reset',this.render);
+      this.appartamenti.add(app.Data.Appartamenti);
+      this.appartamenti.trigger('reset');
+      // this.appartamenti = new app.Appartamenti();
+      // this.appartamenti.fetch({reset: true});
+      // this.listenTo(this.appartamenti,'reset',this.render);
     },
     events: {
       'click #btn-ricerca-edificio': 'ricercaEdificio',

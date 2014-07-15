@@ -23,7 +23,8 @@ var app = app || {};
             data.bagno_1 = model.bagni[0];
             data.bagno_2 = model.bagni[1];
             data.planimetria = model.planimetria;
-            data.planimetria_piano = model.planimetria_piano; 
+            data.planimetria_piano = model.planimetria_piano;
+            data.scheda_pdf = model.scheda_pdf;
           }
           this.$el.html( tpl({model: data, ctype: ctype}));
           return this.$el;

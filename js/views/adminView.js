@@ -20,7 +20,7 @@ var app = app || {};
     events: {
       'click button.add': 'addEdit',
       'click button.edit': 'addEdit',
-      'click button.remove': 'remove',
+      'click button.remove': 'deleteCouchDB',
       'submit form.admin': 'submitForm'
     },
     render: function() {
@@ -98,6 +98,7 @@ var app = app || {};
           formData.bagni[1] = $(e.target).find('input[name="bagno_2"]').val();
           formData.planimetria = $(e.target).find('input[name="planimetria"]').val();
           formData.planimetria_piano = $(e.target).find('input[name="planimetria_piano"]').val();
+          formData.scheda_pdf = $(e.target).find('input[name="scheda_pdf"]').val();
           break;
       }
       // check if CREATE or UPDATE      
@@ -156,6 +157,7 @@ var app = app || {};
       });
     },
     updateCouchDB: function(id,formData) {
+      var self = this;
       $.ajax({
         url: 'https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/'+id,
         type: 'PUT',
@@ -165,7 +167,27 @@ var app = app || {};
           console.dir( data );
           console.log( textStatus );
           console.dir( jqXHR );
+          // refresh view
+          self.readCouchDB();
         }
+      });
+    },
+    deleteCouchDB: function(e) {
+      var id = $(e.target).attr('data-model');
+      var self = this;
+      // get revision version and then delete resource
+      $.getJSON('https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/'+id, function(model) { 
+        $.ajax({
+          url: 'https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/'+model._id+'?rev='+model._rev,
+          type: 'DELETE',
+          success: function( data, textStatus, jqXHR ) {
+            console.log( 'Resource deleted:' );
+            console.log( textStatus );
+            console.dir( jqXHR );
+            // refresh view
+            self.readCouchDB();
+          }
+        });
       });
     }
   });
