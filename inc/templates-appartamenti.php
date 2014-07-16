@@ -164,6 +164,66 @@
     <area shape="poly" alt="" coords="142,117, 142,37, 226,37, 226,55, 218,55, 218,73, 210,73, 210,117, 142,117" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edA-B5-T7sx">
     <area shape="poly" alt="" coords="309,37, 399,37, 399,117, 309,117, 309,37" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edA-C5-T8">
   </map>
+  <!-- Edificio C -->
+  <!-- edificio-C piano-0 -->
+  <map name="edificio-C-piano-0">
+    <area shape="poly" alt="" coords="332,60, 304,60, 304,48, 269,48, 269,134, 306,134, 306,130, 315,130, 315,88, 332,88, 332,60" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-CT-T2sx">
+    <area shape="poly" alt="" coords="428,88, 428,74, 418,74, 418,85, 385,85, 385,48, 359,48, 359,60, 332,60, 332,88, 361,88, 361,130, 421,129, 421,93, 426,93, 426,88, 428,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-CT-T1dx">
+    <area shape="poly" alt="" coords="168,60, 196,60, 196,48, 231,48, 231,134, 194,134, 194,130, 185,130, 185,88, 168,88, 168,60" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-BT-T2dx">
+    <area shape="poly" alt="" coords="72,88, 72,74, 82,74, 82,85, 115,85, 115,48, 141,48, 141,60, 168,60, 168,88, 139,88, 139,130, 79,129, 79,93, 74,93, 74,88, 72,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-BT-T1sx">
+  </map>
+  <!-- edificio-C piano-1 -->
+  <map name="edificio-C-piano-1">
+    <area shape="poly" alt="" coords="63,156, 8,156, 8,48, 61,48, 61,88, 46,88, 46,130, 63,130, 63,156" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A1-T3sx">
+    <area shape="poly" alt="" coords="168,44, 196,44, 196,48, 250,48, 250,134, 194,134, 194,130, 185,130, 185,88, 168,88, 168,44" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B1-T5dx">
+    <area shape="poly" alt="" coords="115,48, 141,48, 141,44, 168,44, 168,88, 152,88, 152,130, 115,130, 115,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B1-T4sx">
+    <area shape="poly" alt="" coords="332,88, 332,44, 359,44, 359,48, 385,48, 385,130, 348,130, 348,88, 332,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C1-T4dx">
+    <area shape="poly" alt="" coords="250,48, 304,48, 304,44, 332,44, 332,88, 315,88, 315,130, 306,130, 306,134, 250,134, 250,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C1-T5sx">
+    <area shape="poly" alt="" coords="439,48, 492,48, 492,156, 437,156, 437,130, 454,130, 454,88, 439,88, 439,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D1-T3dx">
+    <area shape="poly" alt="" coords="385,48, 410,48, 410,44, 439,44, 439,88, 421,88, 421,130, 385,130, 385,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D1-T4sx">
+    <area shape="poly" alt="" coords="61,88, 61,44, 90,44, 90,48, 115,48, 115,130, 79,130, 79,88, 61,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A1-T4dx">
+  </map>
+  <!-- edificio-C piano-2 -->
+  <map name="edificio-C-piano-2">
+    <area shape="poly" alt="" coords="63,156, 8,156, 8,48, 61,48, 61,88, 46,88, 46,130, 63,130, 63,156" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A2-T3sx">
+    <area shape="poly" alt="" coords="168,44, 196,44, 196,48, 250,48, 250,134, 194,134, 194,130, 185,130, 185,88, 168,88, 168,44" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B2-T5dx">
+    <area shape="poly" alt="" coords="115,48, 141,48, 141,44, 168,44, 168,88, 152,88, 152,130, 115,130, 115,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B2-T4sx">
+    <area shape="poly" alt="" coords="332,88, 332,44, 359,44, 359,48, 385,48, 385,130, 348,130, 348,88, 332,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C2-T4dx">
+    <area shape="poly" alt="" coords="250,48, 304,48, 304,44, 332,44, 332,88, 315,88, 315,130, 306,130, 306,134, 250,134, 250,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C2-T5sx">
+    <area shape="poly" alt="" coords="439,48, 492,48, 492,156, 437,156, 437,130, 454,130, 454,88, 439,88, 439,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D2-T3dx">
+    <area shape="poly" alt="" coords="385,48, 410,48, 410,44, 439,44, 439,88, 421,88, 421,130, 385,130, 385,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D2-T4sx">
+    <area shape="poly" alt="" coords="61,88, 61,44, 90,44, 90,48, 115,48, 115,130, 79,130, 79,88, 61,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A2-T4dx">
+  </map>
+  <!-- edificio-C piano-3 -->
+  <map name="edificio-C-piano-3">
+    <area shape="poly" alt="" coords="63,156, 8,156, 8,48, 61,48, 61,88, 46,88, 46,130, 63,130, 63,156" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A3-T3sx">
+    <area shape="poly" alt="" coords="168,44, 196,44, 196,48, 250,48, 250,134, 194,134, 194,130, 185,130, 185,88, 168,88, 168,44" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B3-T5dx">
+    <area shape="poly" alt="" coords="115,48, 141,48, 141,44, 168,44, 168,88, 152,88, 152,130, 115,130, 115,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B3-T4sx">
+    <area shape="poly" alt="" coords="332,88, 332,44, 359,44, 359,48, 385,48, 385,130, 348,130, 348,88, 332,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C3-T4dx">
+    <area shape="poly" alt="" coords="250,48, 304,48, 304,44, 332,44, 332,88, 315,88, 315,130, 306,130, 306,134, 250,134, 250,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C3-T5sx">
+    <area shape="poly" alt="" coords="439,48, 492,48, 492,156, 437,156, 437,130, 454,130, 454,88, 439,88, 439,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D3-T3dx">
+    <area shape="poly" alt="" coords="385,48, 410,48, 410,44, 439,44, 439,88, 421,88, 421,130, 385,130, 385,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D3-T4sx">
+    <area shape="poly" alt="" coords="61,88, 61,44, 90,44, 90,48, 115,48, 115,130, 79,130, 79,88, 61,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A3-T4dx">
+  </map>
+  <!-- edificio-C piano-4 -->
+  <map name="edificio-C-piano-4">
+    <area shape="poly" alt="" coords="437,156, 437,130, 441,130, 439,121, 444,121, 444,112, 492,112, 492,156, 437,156" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D4-T8">
+    <area shape="poly" alt="" coords="63,156, 8,156, 8,48, 61,48, 61,88, 46,88, 46,130, 63,130, 63,156" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A4-T3sx">
+    <area shape="poly" alt="" coords="168,44, 196,44, 196,48, 250,48, 250,134, 194,134, 194,130, 185,130, 185,88, 168,88, 168,44" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B4-T5dx">
+    <area shape="poly" alt="" coords="115,48, 141,48, 141,44, 168,44, 168,88, 152,88, 152,130, 115,130, 115,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B4-T4sx">
+    <area shape="poly" alt="" coords="332,88, 332,44, 359,44, 359,48, 385,48, 385,130, 348,130, 348,88, 332,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C4-T4dx">
+    <area shape="poly" alt="" coords="250,48, 304,48, 304,44, 332,44, 332,88, 315,88, 315,130, 306,130, 306,134, 250,134, 250,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C4-T5sx">
+    <area shape="poly" alt="" coords="439,48, 492,48, 492,112, 454,112, 454,88, 439,88, 439,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D4-T9">
+    <area shape="poly" alt="" coords="385,48, 410,48, 410,44, 439,44, 439,88, 421,88, 421,130, 385,130, 385,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D4-T4sx">
+    <area shape="poly" alt="" coords="61,88, 61,44, 90,44, 90,48, 115,48, 115,130, 79,130, 79,88, 61,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A4-T4dx">
+  </map>
+  <!-- edificio-C piano-5 -->
+  <map name="edificio-C-piano-5">
+    <area shape="poly" alt="" coords="152,74, 152,130, 194,130, 194,134, 250,134, 250,75, 152,74" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B5-T7sx">
+    <area shape="poly" alt="" coords="250,74, 250,134, 306,134, 306,130, 348,130, 348,75, 250,74" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C5-T7dx">
+    <area shape="poly" alt="" coords="421,74, 492,74, 492,130, 422,130, 421,74" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D5-T8">
+    <area shape="poly" alt="" coords="8,74, 79,74, 79,130, 8,130, 8,74" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A5-T6">
+  </map>
 </script>
 
 <script id="tpl-risultati-ricerca-tipologia" type="text/template">

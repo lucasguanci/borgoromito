@@ -74,18 +74,24 @@ node couchdb2json.js
 - risolto problema con attivazione modal utilizzando modal.toggle() in modalView.js dove si raccolgono i click della scheda
 
 # TODO
-- edificio C >> posizione nel piano piano 5, copiare imgs pos.piano 2,3, copiare e inserire in templates le mappe cliccabili, creare schede app. edificio C
+- immagini galleria fotografica (ridimensionare etc)
+- completare schede app. edificio C, copiare app. per piani 2,3,4
+
+- che immagine mettiamo per l'ufficio vendite?
+- edC-A1-T3sx no descr.
+- edC-T6 no descr.
+- edC-T7sx T7dx D4-T8 no descr.
+
 - ricerca per tipologia >> attico è codificato con "A" in app.Data.Appartamenti
 - a volte ci sono ancora pb. con i tempi dello slideshow, che ci siano troppe istanze di Carousel?
-- creare immagini appartamenti, inserire appartamenti e creare mappe cliccabili piani 
-- creare pagine statiche (vd. apppunti)
 - testare ricerca per edificio su Edificio C con piano 0, piano 1, etc
 - gestire caso "nessun risultato"
+
 - gulp per compilare css, autoprefixer
 
 __CouchDB__
 <!-- update appartamenti.json -->
-curl https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_all_docs/\?include_docs=true > appartamenti.couchdb 
+curl https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_all_docs/\?include_docs=true > appartamenti.couchdb
 node couchdb2json.js
 <!-- COPY document -->
 curl -X GET https://brontoluke:rio2016@minimalg.iriscouch.com/_uuids?count=10

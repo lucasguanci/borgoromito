@@ -20,7 +20,7 @@
   </header>
   <!-- /header -->
   <!-- news -->
-  <section id="news" class="news">
+  <section id="news" class="news index">
     <?php include_once 'inc/news.php' ?>
   </section>
   <!-- /news --> 

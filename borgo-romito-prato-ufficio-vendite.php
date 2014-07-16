@@ -22,11 +22,14 @@
     <!-- contatti -->
     <div class="container">
       <div class="row content">
-        <div id="contatti" class="col-md-12 contatti">
-          <h2>Complesso residenziale BorgoRomito</h2>
+        <div id="contatti" class="col-md-12 secondary contatti">
+          <h2>Ufficio vendite</h2>
           <div class="img-wrapper">
             <img src="images/complesso-residenziale-borgo-romito-piano-volumetrico.png" alt="Piano volumetrico Complesso residenziale BorgoRomito, Prato" />
           </div>          
+          <p class="intro">
+            Per ogni informazione sul <strong>Complesso Residenziale BorgoRomito</strong> puoi rivolgerti all’<a href="borgo-romito-prato-ufficio-vendite.php" class="red link">UFFICIO VENDITE</a> di Piazza Duomo. Avrai il vantaggio derivante dalla vendita diretta senza intermediazione e grazie ad accordi esclusivi con un primario Istituto di Credito, la possibilità di accedere a mutui con condizioni particolarmente vantaggiose.
+          </p>
           <p class="intro">
             <strong class="red">Ufficio vendite</strong><br>
             Piazza Duomo, 20 - Prato<br>

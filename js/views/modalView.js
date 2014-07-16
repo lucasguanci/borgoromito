@@ -14,7 +14,7 @@ var app = app || {};
     toggleModal: function(e) {
       // init Galleria fotografica
       id = $(e.target).attr('data-modal-id');
-      $(id).modal("toggle");
+      //$(id).modal("toggle");
       edificio = $(e.target).attr('data-edificio');
       app.Fn.showGallery(edificio);
     }

@@ -29,13 +29,13 @@
             <img src="images/complesso-residenziale-borgo-romito-piano-volumetrico.png" alt="Piano volumetrico Complesso residenziale BorgoRomito, Prato" />
           </div>          
           <p class="intro">
-            Il <span class="red"><strong>Complesso residenziale BorgoRomito</strong></span>, appena fuori le Mura a due passi dal Centro Storico di Prato vicino a tutte le principali vie di comunicazione, in una zona ad alta densità di servizi.<br>
-            La tua casa costruita in equilibrio fra vivibilità e tecnologia, nel rispetto delle risorse ambientali e del risparmio energetico.<br>
-            Giardini e percorsi pedonali creano un ambiente accogliente e sereno con tante comodità.<br>
-            La qualità dei materiali e l’attenzione alle finiture trasformano una casa nella tua casa.
+            Gli edifici del <strong class="red">Complesso Residenziale BorgoRomito</strong> sono dotati dei più moderni sistemi di contenimento dei consumi energetici, quali caldaie a condensazione centralizzate con contabilizzazione e regolazione personalizzata dei consumi e acqua calda centralizzata integrata con tecnologia solare.<br>
+            L’elevato isolamento termoacustico garantito dagli infissi e dal rivestimento a cappotto delle pareti esterne, unito alle prestazioni degli impianti tecnici consentono un agevole ottenimento della Attestazione di Prestazione Energetica (APE) in Classe B.<br>
+            La suddivisione delle unità immobiliari residenziali in tagli differenziati viene incontro a qualsiasi esigenza dell’abitare contemporaneo: tutti gli appartamenti sono dotati di balconi o logge abitabili, accessori e predisposizioni qualificanti.
+            Ai piani interrati degli edifici sono disponibili cantine/ripostiglio e box auto.
           </p>
-          <p class="intro">Disponibili anche garage e fondi commerciali</p>          
-          <p class="intro-istruzioni">
+          <p class="intro">Disponibili anche negozi e uffici.</p>          
+          <p class="intro-istruzioni" style="display:none">
             Per vedere gli appartamenti disponibili è possibile effettuare una <em>ricerca per edificio</em>, una <em>ricerca per tipologia</em> di appartamento (1 camera, 2 camere, etc) oppure una <em>ricerca diretta</em> inserendo l'identificativo dell'appartamento.
           </p>
         </div>

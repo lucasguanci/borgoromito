@@ -61,6 +61,7 @@ body {
  */
 nav.navbar-fixed-top {
   /*border-top: solid 1em @magenta;*/
+
 }
 .navbar {
   color: #333333;
@@ -232,6 +233,9 @@ section#content {
   background-color: white;
   padding: 1em 0;
   /*min-height: 35em;*/
+
+  /* secondary pages */
+
 }
 section#content h2 {
   color: #b90000;
@@ -283,6 +287,7 @@ section#content div.appartamenti.ricerca.last {
 }
 section#content div.risultati-ricerca {
   /*display: none;*/
+
 }
 section#content div.risultati-ricerca div.tab-pane {
   background-color: white;
@@ -319,6 +324,7 @@ section#content div.appartamenti.risultati-ricerca a.galleria-immagini {
   color: #b90000;
   text-decoration: none;
   border-bottom: 1px dotted #b90000;
+  cursor: pointer;
 }
 section#content div.appartamenti.risultati-ricerca a.galleria-immagini:hover {
   color: #b90000;
@@ -439,6 +445,21 @@ section#content div.modal .btn-default:hover {
   background-color: white;
   color: #b90000;
 }
+section#content div.secondary {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px dotted #b90000;
+}
+section#content div.secondary a.link {
+  color: #b90000;
+  text-decoration: none;
+  border-bottom: 1px dotted #b90000;
+}
+section#content div.secondary a.link:hover {
+  color: #b90000;
+  border-bottom: none;
+  text-decoration: none;
+}
 /**
  * News
  */
@@ -452,21 +473,41 @@ section.news div.news h2 {
   text-transform: capitalize;
   color: #b90000;
 }
+section.news div.news h2 a {
+  color: #b90000;
+  text-decoration: none;
+  border-bottom: 1px dotted #b90000;
+}
+section.news div.news h2 a:hover {
+  color: #b90000;
+  border-bottom: none;
+  text-decoration: none;
+}
 section.news div.news p.titolo {
   font-weight: bold;
   color: #c80064;
   margin-bottom: 0;
 }
 section.news div.news a {
+  color: #b90000;
   text-decoration: none;
-  color: #c80064;
-  border-bottom: 1px dotted #c80064;
+  border-bottom: 1px dotted #b90000;
+}
+section.news div.news a:hover {
+  color: #b90000;
+  border-bottom: none;
+  text-decoration: none;
 }
 section.news div.news a.link-img {
   border: none;
 }
 section.news div.news p.cnt {
-  margin-top: 0;
+  margin-top: 1em;
+}
+section.news.index {
+  -webkit-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
 }
 /* index */
 section#content.index {
@@ -555,4 +596,8 @@ form.backend textarea {
 }
 form.backend button[type=submit] {
   margin-top: 1em;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
 }
