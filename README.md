@@ -74,8 +74,7 @@ node couchdb2json.js
 - risolto problema con attivazione modal utilizzando modal.toggle() in modalView.js dove si raccolgono i click della scheda
 
 # TODO
-- immagini galleria fotografica (ridimensionare etc)
-- completare schede app. edificio C, copiare app. per piani 2,3,4
+- ricerca per tip, 2C, non si visualizzano app. tranne che per il piano 0
 
 - che immagine mettiamo per l'ufficio vendite?
 - edC-A1-T3sx no descr.
@@ -95,8 +94,8 @@ curl https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_all_docs/\?i
 node couchdb2json.js
 <!-- COPY document -->
 curl -X GET https://brontoluke:rio2016@minimalg.iriscouch.com/_uuids?count=10
-<!-- eda-c1-t13 -->
-curl -X COPY https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/043cb888c03c0c5429ccba74af001a7e -H "Destination: 8f6b1f25b69081d9270b2f27a5001bda"
+<!-- edc-d1-t3dx -->
+curl -X COPY https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/b767a7067b240270fbab5b31a8005e0d -H "Destination: bdd69ff394898c79367cdb07f700ac5b"
 
 __MODAL WIDTH__
 http://stackoverflow.com/questions/10169432/how-can-i-change-the-default-width-of-a-twitter-bootstrap-modal-box

@@ -260,9 +260,9 @@
       <span class="red">Piano <%= piano %></span> 
       <i class="fa fa-angle-double-right"></i> <%= apps.length %> risultati
     </p>
-    <a data-toggle="collapse" data-target="#piano-<%= piano %>">visualizza</a>
+    <a data-toggle="collapse" data-target="#<%=edificio%>-piano-<%= piano %>">visualizza</a>
   </div>
-  <div id="piano-<%= piano %>" class="piano-container collapse clear">
+  <div id="<%= edificio %>-piano-<%= piano %>" class="piano-container collapse clear">
     <% for (i=0;i<apps.length;i++) { %>
       <div class="piano">
         <h4>

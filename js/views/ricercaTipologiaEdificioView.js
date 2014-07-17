@@ -21,7 +21,7 @@ var app = app || {};
           console.log("ed. %s render piano %s", e, p);
           // render piano
           var pianoView = new app.ricercaTipologiaPianoView();
-          var cnt = pianoView.render( p, apps );
+          var cnt = pianoView.render( e, p, apps );
           var container = '#piani-container-'+e;
           this.$el.find(container).append( cnt );          
         }
