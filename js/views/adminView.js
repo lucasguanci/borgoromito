@@ -20,7 +20,7 @@ var app = app || {};
     events: {
       'click button.add': 'addEdit',
       'click button.edit': 'addEdit',
-      'click button.remove': 'remove',
+      'click button.remove': 'deleteCouchDB',
       'submit form.admin': 'submitForm'
     },
     render: function() {
@@ -65,6 +65,11 @@ var app = app || {};
         var m = this.appartamenti.findWhere({_id: model});
         subview = new app.addEditView();
         self.$el.find('div.cnt[data-model="'+model+'"]').empty().append(subview.render(ctype, m.toJSON()));
+        // enable CKeditor
+        self.$el.find('textarea').each(function(i,item) {
+          var id = $(this).attr('name');
+          CKEDITOR.replace(id);
+        });
       }
     },
     submitForm: function(e) {
@@ -80,6 +85,7 @@ var app = app || {};
           formData.edificio = $(e.target).find('input[name="edificio"]').val();
           formData.piano = $(e.target).find('input[name="piano"]').val();
           formData.tipologia = $(e.target).find('input[name="tipologia"]').val();
+          formData.descrizione = $(e.target).find('textarea[name="descrizione"]').val();
           formData.superficie = {};
           formData.superficie.lorda = $(e.target).find('input[name="superficie_lorda"]').val();
           formData.superficie.logge = $(e.target).find('input[name="superficie_logge"]').val();
@@ -91,6 +97,8 @@ var app = app || {};
           formData.bagni[0] = $(e.target).find('input[name="bagno_1"]').val();
           formData.bagni[1] = $(e.target).find('input[name="bagno_2"]').val();
           formData.planimetria = $(e.target).find('input[name="planimetria"]').val();
+          formData.planimetria_piano = $(e.target).find('input[name="planimetria_piano"]').val();
+          formData.scheda_pdf = $(e.target).find('input[name="scheda_pdf"]').val();
           break;
       }
       // check if CREATE or UPDATE      
@@ -149,6 +157,7 @@ var app = app || {};
       });
     },
     updateCouchDB: function(id,formData) {
+      var self = this;
       $.ajax({
         url: 'https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/'+id,
         type: 'PUT',
@@ -158,7 +167,27 @@ var app = app || {};
           console.dir( data );
           console.log( textStatus );
           console.dir( jqXHR );
+          // refresh view
+          self.readCouchDB();
         }
+      });
+    },
+    deleteCouchDB: function(e) {
+      var id = $(e.target).attr('data-model');
+      var self = this;
+      // get revision version and then delete resource
+      $.getJSON('https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/'+id, function(model) { 
+        $.ajax({
+          url: 'https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/'+model._id+'?rev='+model._rev,
+          type: 'DELETE',
+          success: function( data, textStatus, jqXHR ) {
+            console.log( 'Resource deleted:' );
+            console.log( textStatus );
+            console.dir( jqXHR );
+            // refresh view
+            self.readCouchDB();
+          }
+        });
       });
     }
   });

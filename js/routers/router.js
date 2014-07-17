@@ -18,7 +18,7 @@ var app = app || {};
       var mainView = new app.mainView();
     },
     index: function() {
-      ;
+      console.log("router > index");
     }
 	});
 })(jQuery);

@@ -8,7 +8,7 @@ var app = app || {};
       ;
     },
     events: {},
-    render: function(piano,apps) {
+    render: function(edificio,piano,apps) {
       // create modals
       _.each(apps,function(item) {
         var modalView = new app.modalView();
@@ -16,7 +16,7 @@ var app = app || {};
         $("#modals-container").append( cnt );        
       });
       // render view
-      this.$el.append( this.template({piano: piano, apps: apps}) );
+      this.$el.append( this.template({edificio: edificio, piano: piano, apps: apps}) );
       return this.$el;        
 
       // render modals and catch click events on area maps

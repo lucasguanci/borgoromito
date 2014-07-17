@@ -41,11 +41,64 @@ node couchdb2json.js
 - la collection di appartamenti adesso è ordinata alfabeticamente
 - risolto problema async nel recuperare appartamenti
 
+# 140701
+- merged _tipologia_ (versione 1) into _master_
+- on branch _tipologia_ riscritto il rendering della ricercaper tipologia, da testare e vedere se tutto è ok anche con 2+ edifici
+
+# 140702
+- on branch _tipologia_, completata la nuova vista tipologia e testata con 2 edifici
+- iniziata modifica template modal
+
+# 140703
+- creata vista _ricerca diretta_
+- completato template modal per inserire vista piano etc, modificato oggetto appartamento e api db per immagine collocazione appartamento nel piano
+
+# 140704
+- modal, inserito campo descrizione e bottone per galleria immagini
+- app.Appartamenti (la collection) adesso legge i dati da appartamenti.json
+
+# 140707
+- iniziato a lavorare alla galleria fotografica
+
+# 140708
+- sistemato case edificio (A,C, all,..)
+
+# 140711
+- sistemata galleria immagini, adesso è contenuta in galleria-immagini.php e galleria-immagini.js
+
+# 140714
+- completato deleteCouchDB()
+
+# 140715
+- tolto il fetch della collection da file (non supportato da IIS), gli appartamenti vengono inclusi in appartamenti.js
+- risolto problema con attivazione modal utilizzando modal.toggle() in modalView.js dove si raccolgono i click della scheda
+
 # TODO
-- merge _tipologia_ into _master_
-- creare immagini appartamenti, inserire appartamenti e creare mappe cliccabili piani 
+- ricerca per tip, 2C, non si visualizzano app. tranne che per il piano 0
+
+- che immagine mettiamo per l'ufficio vendite?
+- edC-A1-T3sx no descr.
+- edC-T6 no descr.
+- edC-T7sx T7dx D4-T8 no descr.
+
+- ricerca per tipologia >> attico è codificato con "A" in app.Data.Appartamenti
+- a volte ci sono ancora pb. con i tempi dello slideshow, che ci siano troppe istanze di Carousel?
+- testare ricerca per edificio su Edificio C con piano 0, piano 1, etc
 - gestire caso "nessun risultato"
+
 - gulp per compilare css, autoprefixer
+
+__CouchDB__
+<!-- update appartamenti.json -->
+curl https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/_all_docs/\?include_docs=true > appartamenti.couchdb
+node couchdb2json.js
+<!-- COPY document -->
+curl -X GET https://brontoluke:rio2016@minimalg.iriscouch.com/_uuids?count=10
+<!-- edc-d1-t3dx -->
+curl -X COPY https://brontoluke:rio2016@minimalg.iriscouch.com/borgoromito/b767a7067b240270fbab5b31a8005e0d -H "Destination: bdd69ff394898c79367cdb07f700ac5b"
+
+__MODAL WIDTH__
+http://stackoverflow.com/questions/10169432/how-can-i-change-the-default-width-of-a-twitter-bootstrap-modal-box
 
 __GULP__
 https://www.codefellows.org/blog/quick-intro-to-gulp-js
@@ -79,5 +132,12 @@ Opel = {
     this.cilindrata = 1600;
     this.posti = 5;
     return this;
+  }
+}
+
+a.Fn = {
+  sayHello: function(g) { 
+    this.g = g || "hello world"; 
+    return g;
   }
 }

@@ -21,21 +21,18 @@
         </div>
         <!-- col. 2 -->
         <div class="col-md-4 footer">
-          <h2>Contatti</h2>
+          <h2>&nbsp;</h2>
           <p>
-            <a href="#">Informazioni</a><br>
-            <a href="#">Partner</a><br>
-            <a href="#">Sponsor</a><br>
+            <a href="borgo-romito-prato-ufficio-vendite.php" title="Informazioni BorgoRomito - Prato">Informazioni</a><br>
+            <a href="borgo-romito-prato-partner.php" title="BorgoRomito, i partner">Partner</a><br>
+            <!-- <a href="borgo-romito-prato-sponsor.php" title="BorgoRomito, gli sponsor">Sponsor</a><br> -->
           </p>
         </div>
         <!-- col. 3 -->
         <div class="col-md-4 footer">
-          <h2>CAP casa</h2>
+          <h2>&nbsp;</h2>
           <p>
             <img src="images/logo-CAP-casa.png">
-          </p>
-          <p>
-            <a href="#">CAP casa spa</a>
           </p>
         </div>
       </div>

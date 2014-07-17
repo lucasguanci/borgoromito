@@ -4,7 +4,7 @@ var app = app || {};
   app.Appartamenti = Backbone.Collection.extend({
     model: app.Appartamento,
     comparator: 'nome'
+    //url: 'appartamenti.json'
     // localStorage: new Backbone.LocalStorage("appartamenti")
-    // url: 'appartamenti.json'
   });
 })(jQuery);

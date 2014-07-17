@@ -12,4 +12,5 @@
   <!-- Templating engines -->
   <script src="js/lib/underscore.js"></script>
   <!-- BorgoRomito -->
+  <script src="js/galleria-immagini.js"></script>
   <script src="js/app.js"></script>

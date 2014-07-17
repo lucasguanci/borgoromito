@@ -13,8 +13,8 @@ var app = app || {};
       this.$el.empty();
       var $container = $('#tpl-risultati-ricerca-edificio-container');
       this.$el.html( this.template({edificio: model}) );
+      app.Fn.initGallery();
       return this.$el;        
-
       // if ( $container.hasClass("active") ) {
       //   $container.removeClass("active");
       //   $container.hide();

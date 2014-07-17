@@ -98,7 +98,7 @@
       <input type="text" class="form-control" name="ctype" placeholder="appartamenti" <% if ( typeof(model)!=="undefined" && typeof(model.ctype) !== "undefined" ) { %> value="<%= model.ctype %>" <% } %> />
       <!-- nome -->
       <label for="nome">nome</label>
-      <input type="text" class="form-control" name="nome" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.nome) !== "undefined" ) { %> value="<%= model.nome %>" <% } %> />
+      <input type="text" class="form-control" name="nome" placeholder="edA-A1-T1" <% if ( typeof(model)!=="undefined" && typeof(model.nome) !== "undefined" ) { %> value="<%= model.nome %>" <% } %> />
       <!-- edificio -->
       <label for="edificio">edificio</label>
       <input type="text" class="form-control" name="edificio" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.edificio) !== "undefined" ) { %> value="<%= model.edificio %>" <% } %> />
@@ -108,6 +108,9 @@
       <!-- piano -->
       <label for="piano">piano</label>
       <input type="text" class="form-control" name="piano" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.piano) !== "undefined" ) { %> value="<%= model.piano %>" <% } %> />
+      <!-- descrizione -->
+      <label for="descrizione">descrizione</label>
+      <textarea class="form-control" name="descrizione" rows="10"><% if ( typeof(model)!=="undefined" && typeof(model.descrizione) !== "undefined" ) { %><%=model.descrizione%> <% } %></textarea>
       <!-- superficie_lorda -->
       <label for="superficie_lorda">superficie_lorda</label>
       <input type="text" class="form-control" name="superficie_lorda" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.superficie_lorda) !== "undefined" ) { %> value="<%= model.superficie_lorda %>" <% } %> />
@@ -127,7 +130,13 @@
       <input type="text" class="form-control" name="bagno_2" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.bagno_2) !== "undefined" ) { %> value="<%= model.bagno_2 %>" <% } %> />
       <!-- planimetria -->
       <label for="planimetria">planimetria</label>
-      <input type="text" class="form-control" name="planimetria" placeholder="" <% if ( typeof(model)!=="undefined" && typeof(model.planimetria) !== "undefined" ) { %> value="<%= model.planimetria %>" <% } %> />
+      <input type="text" class="form-control" name="planimetria" placeholder="images/planimetria-ed-A-T1.png" <% if ( typeof(model)!=="undefined" && typeof(model.planimetria) !== "undefined" ) { %> value="<%= model.planimetria %>" <% } %> />
+      <!-- planimetria piano -->
+      <label for="planimetria_piano">planimetria piano</label>
+      <input type="text" class="form-control" name="planimetria_piano" placeholder="images/posizione-piano-ed-A-A1-T1.png" <% if ( typeof(model)!=="undefined" && typeof(model.planimetria_piano) !== "undefined" ) { %> value="<%= model.planimetria_piano %>" <% } %> />
+      <!-- scheda PDF -->
+      <label for="scheda_pdf">scheda PDF</label>
+      <input type="text" class="form-control" name="scheda_pdf" placeholder="files/edA-A1-T1.pdf" <% if ( typeof(model)!=="undefined" && typeof(model.scheda_pdf) !== "undefined" ) { %> value="<%= model.scheda_pdf %>" <% } %> />
       <!-- submit -->
       <button type="submit" class="btn btn-primary">Invia</button>
     </form>
@@ -142,6 +151,7 @@
   <script src="js/lib/underscore.js"></script>
   <script src="js/lib/backbone.js"></script>
   <script type="text/javascript" src="js/lib/backbone.localStorage.js"></script>
+  <script src="js/lib/ckeditor/ckeditor.js"></script> 
   <!-- BorgoRomito Admin -->
   <script src="js/models/edificio.js"></script>
   <script src="js/models/appartamento.js"></script>
@@ -150,7 +160,6 @@
   <script src="js/routers/adminRouter.js"></script>
   <script src="js/views/adminView.js"></script>
   <script src="js/views/ctypeView.js"></script>
-  <script src="js/views/adminModelView.js"></script>
   <script src="js/views/addEditView.js"></script>
   <script src="js/admin.js"></script>
   <!-- /scripts -->

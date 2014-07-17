@@ -13,3 +13,5 @@ lessc css/styles.less > css/styles.css
 cp -r fonts out/
 cp -r images out/
 cp -r js out/
+cp -r files out
+cp appartamenti.json out/

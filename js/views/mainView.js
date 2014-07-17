@@ -6,18 +6,23 @@ var app = app || {};
     template: _.template( $('#tpl-ricerca').html() ),
     initialize: function() {
       this.edifici = new app.Edifici(app.Data.Edifici);
-      this.appartamenti = new app.Appartamenti(app.Data.Appartamenti);
-      this.render();
+      this.appartamenti = new app.Appartamenti();
+      this.listenTo(this.appartamenti,'reset',this.render);
+      this.appartamenti.add(app.Data.Appartamenti);
+      this.appartamenti.trigger('reset');
+      // this.appartamenti = new app.Appartamenti();
+      // this.appartamenti.fetch({reset: true});
+      // this.listenTo(this.appartamenti,'reset',this.render);
     },
     events: {
       'click #btn-ricerca-edificio': 'ricercaEdificio',
       'change input[name="edificio"]': 'ricercaEdificio',
       'click #btn-ricerca-tipologia': 'ricercaTipologia',
       'change input[name="tipologia"]': 'ricercaTipologia',
-      'click #btn-ricerca-appartamento': 'ricercaAppartamento',
-      'click button.test': 'ricercaEdificio'
+      'click #btn-ricerca-appartamento': 'ricercaAppartamento'
     },
     render: function() {
+      console.log('MainView rendered');
       this.$el.html( this.template() );
     },
     ricercaEdificio: function(e) {
@@ -43,12 +48,35 @@ var app = app || {};
       // res = { A:[{app.1},{app.2},..], C:[{app.1},..]}
       var apps = this.appartamenti.where({tipologia: tipologia});      
       var edifici = [];
-      edifici = _.keys(_.groupBy(apps,function(app){return app.get("edificio")}))
+      keys = _.keys(_.groupBy(apps,function(app){return app.get("edificio")}));
       var self = this;
-      edifici.forEach(function(edificio) {
-        var ricercaTipologiaView = new app.ricercaTipologiaView();
-        self.$el.find("div#tpl-risultati-ricerca-tipologia-container").html( ricercaTipologiaView.render(edificio,apps) );  
+      _.each(keys, function(edificio) {
+        edifici.push(self.edifici.findWhere({edificio: edificio}));
       });
+      var c = new Backbone.Collection(apps);
+      var nres = _.map(edifici, function(edificio){ 
+        return c.where({"edificio":edificio.get("id")}).length;
+      });
+      var ricercaTipologiaView = new app.ricercaTipologiaView();
+      this.$el.find("div#tpl-risultati-ricerca-tipologia-container").html( ricercaTipologiaView.render(edifici,nres,apps) );  
+
+
+      // edifici.forEach(function(edificio) {
+      //   var ricercaTipologiaView = new app.ricercaTipologiaView();
+      //   self.$el.find("div#tpl-risultati-ricerca-tipologia-container").html( ricercaTipologiaView.render(edificio,apps) );  
+      // });
+    },
+    ricercaAppartamento: function(e) {
+      e.preventDefault();
+      var id = $(e.target).parent().find("input").val();
+      var appartamento = this.appartamenti.findWhere({nome: id});
+      this.clearRisultatiRicerca();
+      var modalView = new app.modalView();
+      var cnt = modalView.render( appartamento.toJSON() );
+      $("#modals-container").append( cnt );   
+      $("#"+id).modal('show');     
+
+      // show modal
     },
     clearRisultatiRicerca: function() {
       $("div.appartamenti.risultati-ricerca").empty();
