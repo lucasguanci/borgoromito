@@ -1,0 +1,8 @@
+{
+  "_id": "_design/get",
+  "views": {
+    "all": {
+      "map": "function(doc){ emit(doc._id) }"
+    }
+  }
+}

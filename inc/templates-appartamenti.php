@@ -15,7 +15,7 @@
         </label>
       </div>
       <div class="radio">
-        <label>
+        <label class="disabled">
           <input type="radio" name="edificio" id="edificio-B" value="B" disabled>
           Edificio B
         </label>
@@ -27,7 +27,7 @@
         </label>
       </div>
       <div class="radio">
-        <label>
+        <label class="disabled">
           <input type="radio" name="edificio" id="edificio-D" value="D" disabled>
           Edificio D
         </label>
@@ -60,7 +60,7 @@
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="tipologia" id="attico" value="attico">
+          <input type="radio" name="tipologia" id="attico" value="A">
           Attico
         </label>
       </div>
@@ -74,21 +74,23 @@
     <form role="form" id="form-ricerca-appartamento" class="form-ricerca appartamento">
       <div class="form-group">
         <label for="id-appartamento">Identificativo appartamento</label>
-        <input type="text" class="form-control" id="id-appartamento" placeholder="edC-CT-T1sx">
+        <input type="text" class="form-control" id="id-appartamento" placeholder="edC-A1-T3sx">
       </div>
       <button id="btn-ricerca-appartamento" type="submit" class="btn btn-default">Prosegui</button>
     </form>
   </div>
-  <!-- /Ricerca per appartamento -->
+  <!-- /Ricerca per appartamento -->  
 </script>
 
 <script id="tpl-risultati-ricerca-edificio" type="text/template">
   <h2>Risultati ricerca per edificio</h2>
   <h3><%= edificio.nome %></h3>
-  <p class="descrizione">
+  <div class="link-galleria-immagini">
+    <a class="galleria-immagini menu-galleria" data-edificio="<%= edificio.id %>">galleria immagini <%= edificio.nome %></a>
+  </div>
+  <p class="descrizione clear">
     <img class="edificio" src="<%= edificio.img.src %>" alt="<%= edificio.img.caption %>">
-    <%= edificio.descrizione %><br>
-    <a class="galleria-immagini" data-edificio="<%= edificio.id %>">galleria immagini <%= edificio.nome %></a>
+    <%= edificio.descrizione %><br>    
   </p>
   <h3 class="istruzioni clear"><i class="fa fa-angle-double-right"></i> Selezionare un piano dell&#39;edificio</h3>
   <form id="form-edificio-seleziona-piano" class="form-inline clear" role="form">
@@ -109,7 +111,7 @@
 
 <script id="tpl-risultati-edificio-piano" type="text/template">
   <h3><%= edificio.nome %> - <%= edificio.piani[piano].piano %></h3>
-  <p class="intro">
+  <p class="intro clear">
     Per visualizzare la descrizione di un appartamento, cliccare sulla pianta sull appartamento desiderato.
   </p>
   <div class="img-piano">
@@ -207,7 +209,7 @@
   </map>
   <!-- edificio-C piano-4 -->
   <map name="edificio-C-piano-4">
-    <area shape="poly" alt="" coords="437,156, 437,130, 441,130, 439,121, 444,121, 444,112, 492,112, 492,156, 437,156" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D4-T8">
+    <area shape="poly" alt="" coords="437,156, 437,130, 441,130, 439,121, 444,121, 444,112, 492,112, 492,156, 437,156" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D5-T8">
     <area shape="poly" alt="" coords="63,156, 8,156, 8,48, 61,48, 61,88, 46,88, 46,130, 63,130, 63,156" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A4-T3sx">
     <area shape="poly" alt="" coords="168,44, 196,44, 196,48, 250,48, 250,134, 194,134, 194,130, 185,130, 185,88, 168,88, 168,44" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B4-T5dx">
     <area shape="poly" alt="" coords="115,48, 141,48, 141,44, 168,44, 168,88, 152,88, 152,130, 115,130, 115,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B4-T4sx">
@@ -247,7 +249,9 @@
     <p class="descrizione">
       <img class="edificio" src="<%= edificio.img.src %>" alt="<%= edificio.img.caption %>">
       <%= edificio.descrizione %><br>
-      <a class="galleria-immagini" data-edificio="<%= edificio.id %>">galleria immagini <%= edificio.nome %></a>
+      <div class="link-galleria-immagini" style="margin-left: 0">
+        <a class="galleria-immagini menu-galleria" data-edificio="<%= edificio.id %>">galleria immagini <%= edificio.nome %></a>
+      </div>
     </p>
     <h3 class="istruzioni clear"><i class="fa fa-angle-double-right"></i> Selezionare un piano dell&#39;edificio</h3>
     <div id="piani-container-<%=edificio.id%>" class="piani-container"></div>

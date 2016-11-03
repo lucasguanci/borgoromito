@@ -70,13 +70,15 @@ var app = app || {};
       e.preventDefault();
       var id = $(e.target).parent().find("input").val();
       var appartamento = this.appartamenti.findWhere({nome: id});
-      this.clearRisultatiRicerca();
-      var modalView = new app.modalView();
-      var cnt = modalView.render( appartamento.toJSON() );
-      $("#modals-container").append( cnt );   
-      $("#"+id).modal('show');     
-
-      // show modal
+      if ( typeof(appartamento)!=="undefined" ) {
+        this.clearRisultatiRicerca();
+        var modalView = new app.modalView();
+        var cnt = modalView.render( appartamento.toJSON() );
+        $("#modals-container").append( cnt );   
+        $("#"+id).modal('show');             
+      } else {
+        alert("Il codice appartamento inserito non è valido");
+      }
     },
     clearRisultatiRicerca: function() {
       $("div.appartamenti.risultati-ricerca").empty();

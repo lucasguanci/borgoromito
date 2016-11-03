@@ -74,17 +74,8 @@ node couchdb2json.js
 - risolto problema con attivazione modal utilizzando modal.toggle() in modalView.js dove si raccolgono i click della scheda
 
 # TODO
-- ricerca per tip, 2C, non si visualizzano app. tranne che per il piano 0
-
-- che immagine mettiamo per l'ufficio vendite?
-- edC-A1-T3sx no descr.
-- edC-T6 no descr.
-- edC-T7sx T7dx D4-T8 no descr.
-
-- ricerca per tipologia >> attico è codificato con "A" in app.Data.Appartamenti
-- a volte ci sono ancora pb. con i tempi dello slideshow, che ci siano troppe istanze di Carousel?
-- testare ricerca per edificio su Edificio C con piano 0, piano 1, etc
-- gestire caso "nessun risultato"
+- maiuscole/minuscole per ricerca diretta
+- tempi dello slideshow, che ci siano troppe istanze di Carousel?
 
 - gulp per compilare css, autoprefixer
 
