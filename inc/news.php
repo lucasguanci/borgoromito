@@ -39,7 +39,7 @@
       </a>
       <p class="cnt">
         Grazie ad un accordo esclusivo con un primario Istituto di Credito, CAP CASA per l’acquisto della tua casa a BorgoRomito ti offre la possibilità di ottenere un Mutuo a condizioni particolarmente vantaggiose.<br>
-        Richiedi informazioni dettagliate presso il nostro <strong class="red">ufficio vendite</strong> di Piazza Duomo.
+        Richiedi informazioni dettagliate presso il nostro <a href="http://borgoromito.local/borgo-romito-prato-ufficio-vendite.php"<strong class="red">ufficio vendite</strong>.</a>
       </p>
     </div>
     <!-- col.4 -->
@@ -55,6 +55,7 @@
         Si colloca in una area ad alta densità di servizi in posizione ideale tra il Centro Storico della Città di Prato... (<a class="link" href="borgo-romito-prato-dove-si-trova.php">continua</a>)
       </p>
     </div>
+    <div class="clearfix visible-xs visible-sm"></div>
    </div>
 </div>
 <!-- /news -->

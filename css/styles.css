@@ -41,6 +41,19 @@ hr {
 .clear {
   clear: both;
 }
+.img-link {
+  border: none ;
+}
+.link-std {
+  color: #b90000;
+  text-decoration: none;
+  border-bottom: 1px dotted #b90000;
+}
+.link-std:hover {
+  color: #b90000;
+  border-bottom: none;
+  text-decoration: none;
+}
 /**
  * Body 
  */
@@ -48,6 +61,38 @@ body {
   font-family: 'Lato', Arial, sans-serif;
   background-color: white;
   line-height: 1.25em;
+}
+/**
+ * Cookies
+ */
+div.cookiebanner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em 5%;
+  background-color: #B02C16;
+  color: white;
+  z-index: 2000;
+}
+section#cookies-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em 5%;
+  background-color: #B02C16;
+  color: white;
+  z-index: 2000;
+}
+section#cookies-wrapper div.cookies-left {
+  width: 70%;
+  float: left;
+}
+section#cookies-wrapper div.cookies-right {
+  width: 30%;
+  float: left;
+  text-align: right;
 }
 /**
  * Navbar
@@ -94,6 +139,14 @@ div#header-right p.menu a {
   font-size: 100%;
   color: #b90000;
 }
+div#header-right p.menu a.menu-galleria {
+  color: white;
+  cursor: pointer;
+}
+div#header-right p.menu a.menu-galleria:hover {
+  text-decoration: none;
+  color: #464646;
+}
 p.navbar-text {
   color: #000000;
   margin-top: 0;
@@ -137,11 +190,22 @@ p.navbar-text.menu a:hover {
   color: #333333;
   color: #c80064;
 }
+.menu-item.first {
+  padding-left: 30px;
+}
 .menu-item::after {
   content: "  |  ";
   color: #c8c8c8;
 }
 .menu-item.last::after {
+  content: "";
+}
+.menu-item.menu-galleria {
+  padding: 2px 6px;
+  background-color: #b90000;
+  border-radius: 4px;
+}
+.menu-item.menu-galleria::after {
   content: "";
 }
 #banner {
@@ -160,7 +224,7 @@ div.carousel {
 }
 @media screen and (min-width: 768px) {
   div.carousel {
-    margin-top: 5.5em;
+    margin-top: 4.2em;
   }
 }
 .carousel-control {
@@ -269,9 +333,9 @@ section#content div.appartamenti.intro div.img-wrapper {
 section#content div.appartamenti.ricerca {
   background-color: #f0f0f0;
   border: solid 1px white;
-  padding: 1em 15px;
-  margin: 1em 5px;
-  width: 32%;
+  padding: 1em 10px;
+  margin: 1em 0;
+  width: 30%;
 }
 section#content div.appartamenti.ricerca h2 {
   margin-top: 0;
@@ -281,6 +345,9 @@ section#content div.appartamenti.ricerca.first {
 }
 section#content div.appartamenti.ricerca.last {
   margin-right: 0;
+}
+section#content div.appartamenti.ricerca label.disabled {
+  color: #808080;
 }
 section#content div.risultati-ricerca {
   /*display: none;*/
@@ -329,6 +396,25 @@ section#content div.appartamenti.risultati-ricerca a.galleria-immagini:hover {
 }
 section#content div.appartamenti.risultati-ricerca h3.istruzioni {
   padding: 1em 0;
+}
+section#content div.appartamenti.risultati-ricerca div.link-galleria-immagini {
+  margin-left: 15px;
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: #b90000;
+  border-radius: 4px;
+}
+section#content div.appartamenti.risultati-ricerca div.link-galleria-immagini a.menu-galleria {
+  color: white;
+  cursor: pointer;
+}
+section#content div.appartamenti.risultati-ricerca div.link-galleria-immagini a.menu-galleria:hover {
+  text-decoration: none;
+  color: #464646;
+}
+section#content div#tpl-risultati-ricerca-edificio-container h3 {
+  padding: 2px 0;
+  float: left;
 }
 section#content div#risultati-edificio-piano {
   margin: 1em 0;
@@ -379,12 +465,12 @@ section#content div.piani-container div.piano {
 }
 section#content div.piani-container div.piano a.link-img {
   display: block;
-  pointer: cursor;
+  cursor: pointer;
 }
 section#content div.piani-container div.piano img {
   max-height: 200px;
   display: block;
-  pointer: cursor;
+  cursor: pointer;
   margin: 0 auto;
 }
 section#content div.piani-container div.piano button {
@@ -456,15 +542,30 @@ section#content div.secondary a.link:hover {
   border-bottom: none;
   text-decoration: none;
 }
+section#content div.secondary div.img-wrapper {
+  float: left;
+  margin-right: 15px;
+}
+section#content div.partner {
+  text-align: center;
+  min-height: 15em;
+}
+@media screen and (max-width: 768px) {
+  section#content.secondary {
+    margin-top: 11em;
+  }
+}
 /**
  * News
  */
 section.news {
-  background-color: #fffdfa;
+  font-size: 90%;
+  background-color: white;
   padding-top: 1em;
   padding-bottom: 2em;
 }
 section.news div.news h2 {
+  font-size: 1.11em;
   margin-bottom: 1em;
   text-transform: capitalize;
   color: #b90000;

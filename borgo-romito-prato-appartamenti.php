@@ -3,7 +3,7 @@
   <head>
     <title>BorgoRomito - complesso residenziale, Prato</title>
     <!-- properly render unicode characters in IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- common head elements -->
@@ -11,7 +11,7 @@
     <?php include_once 'inc/ie-fix.php' ?>
   </head>
 <body>
-  <?php include_once("analyticstracking.php") ?>
+  <?php include_once("inc/analyticstracking.php") ?>
   <header>
     <!-- main-nav -->
     <?php include_once 'inc/nav.php' ?>
@@ -45,7 +45,7 @@
     <!-- Ricerca appartamenti -->
     <div class="container">
       <div id="tpl-ricerca-container" class="row content">
-        <!-- #tpl-ricerca -->
+        <!-- #tpl-ricerca -->        
       </div>
     </div>
     <!-- /Ricerca appartamenti -->

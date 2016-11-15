@@ -74,7 +74,8 @@ h1, h2, h3, h4, h5, h6 {
  */
 hr { border-bottom: 1px dotted rgb(128,128,128); }
 .clear { clear: both; }
-
+.img-link { border: none ;}
+.link-std { .link(@red); }
 
 /**
  * Body 
@@ -83,6 +84,39 @@ body {
   font-family: 'Lato', Arial, sans-serif;
   background-color: white;
   line-height: 1.25em;
+}
+
+/**
+ * Cookies
+ */
+div.cookiebanner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em 5%;
+  background-color: #B02C16;
+  color: white;
+  z-index: 2000;  
+}
+section#cookies-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em 5%;
+  background-color: #B02C16;
+  color: white;
+  z-index: 2000;
+  div.cookies-left {
+    width: 70%;
+    float: left;
+  }
+  div.cookies-right {
+    width: 30%;
+    float: left;
+    text-align: right;
+  }
 }
 
 /**
@@ -125,6 +159,14 @@ div#header-right {
     a {
       font-size: 100%;
       color: @red;
+    }
+    a.menu-galleria {
+      color: white;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+        color: @gray-dark;
+      };
     }
   }
 }
@@ -172,11 +214,22 @@ p.navbar-text.menu {
   color: rgb(51,51,51);
   color: @magenta;
 }
+.menu-item.first {
+  padding-left: 30px;
+}
 .menu-item::after {
   content: "  |  " ;
   color: rgb(200,200,200);
 }
 .menu-item.last::after {
+  content: "" ;
+}
+.menu-item.menu-galleria {
+  padding: 2px 6px;
+  background-color: @red;
+  border-radius: 4px;
+}
+.menu-item.menu-galleria::after {
   content: "" ;
 }
 #banner {
@@ -192,7 +245,7 @@ div.carousel {
 }
 @media screen and (min-width: 768px) {
   div.carousel {
-    margin-top: 5.5em;
+    margin-top: 4.2em;
   }
 }
 .carousel-control {
@@ -288,9 +341,9 @@ section#content {
   div.appartamenti.ricerca {
     background-color: #f0f0f0;
     border: solid 1px white;
-    padding: 1em 15px;
-    margin: 1em 5px;
-    width: 32%;
+    padding: 1em 10px; //1em 15px;
+    margin: 1em 0; //1em 5px;
+    width: 30%;
     h2 {
       margin-top: 0;
     }
@@ -300,6 +353,9 @@ section#content {
     &.last {
       margin-right: 0;
     };
+    label.disabled {
+      color: @gray-medium;
+    }
   }
   div.risultati-ricerca {
     /*display: none;*/
@@ -334,6 +390,27 @@ section#content {
     h3.istruzioni {
       padding: 1em 0;
     }  
+    div.link-galleria-immagini {
+      margin-left: 15px;
+      display: inline-block;
+      padding: 2px 6px;
+      background-color: @red;
+      border-radius: 4px;
+      a.menu-galleria {
+        color: white;
+        cursor: pointer;
+        &:hover {
+          text-decoration: none;
+          color: @gray-dark;
+        };
+      }
+    }    
+  }
+  div#tpl-risultati-ricerca-edificio-container {
+    h3 { 
+      padding: 2px 0;
+      float: left;
+    }
   }
   div#risultati-edificio-piano {
     margin: 1em 0;
@@ -374,12 +451,12 @@ section#content {
       float: left;
       a.link-img {
         display: block;
-        pointer: cursor;
+        cursor: pointer;
       }
       img {
         max-height: 200px;
         display: block;
-        pointer: cursor;
+        cursor: pointer;
         margin: 0 auto;
       }
       button {
@@ -434,17 +511,32 @@ section#content {
     a.link {
       .link(@red);
     }
+    div.img-wrapper {
+      float: left;
+      margin-right: 15px;
+    }
+  }
+  div.partner {
+    text-align: center;
+    min-height: 15em;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#content.secondary {
+    margin-top: 11em;
   }
 }
 /**
  * News
  */
 section.news {
-  background-color: @news-background;
+  font-size: 90%;
+  background-color: white;
   padding-top: 1em;
   padding-bottom: 2em;
   div.news {
-    h2 { 
+    h2 {
+      font-size: 1.11em; 
       margin-bottom: 1em;
       text-transform: capitalize;
       color: @red;

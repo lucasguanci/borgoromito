@@ -3,7 +3,7 @@
   <head>
     <title>BorgoRomito - complesso residenziale, Prato</title>
     <!-- properly render unicode characters in IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- common head elements -->
@@ -11,7 +11,7 @@
     <?php include_once 'inc/ie-fix.php' ?>
   </head>
 <body>
-  <?php include_once("analyticstracking.php") ?>
+  <?php include_once("inc/analyticstracking.php") ?>
   <header>
     <!-- main-nav -->
     <?php include_once 'inc/nav.php' ?>
@@ -19,7 +19,7 @@
   <!-- /header -->
   <!-- content -->
   <section id="content" class="secondary">
-    <!-- contatti -->
+    <!-- ufficio vendite -->
     <div class="container">
       <div class="row content">
         <div id="contatti" class="col-md-12 secondary contatti">
@@ -28,20 +28,34 @@
             <img src="images/complesso-residenziale-borgo-romito-piano-volumetrico.png" alt="Piano volumetrico Complesso residenziale BorgoRomito, Prato" />
           </div>          
           <p class="intro">
-            Per ogni informazione sul <strong>Complesso Residenziale BorgoRomito</strong> puoi rivolgerti all’<a href="borgo-romito-prato-ufficio-vendite.php" class="red link">UFFICIO VENDITE</a> di Piazza Duomo. Avrai il vantaggio derivante dalla vendita diretta senza intermediazione e grazie ad accordi esclusivi con un primario Istituto di Credito, la possibilità di accedere a mutui con condizioni particolarmente vantaggiose.
+            Per ogni informazione sul <strong>Complesso Residenziale BorgoRomito</strong> puoi rivolgerti all’<span class="red">UFFICIO VENDITE</span>. Avrai il vantaggio derivante dalla vendita diretta senza intermediazione e grazie ad accordi esclusivi con un primario Istituto di Credito, la possibilità di accedere a mutui con condizioni particolarmente vantaggiose.
           </p>
-          <p class="intro">
+          <p class="intro clear" style="float: left">
             <strong class="red">Ufficio vendite</strong><br>
-            Piazza Duomo, 20 - Prato<br>
+            via del Romito 70 - Prato<br>
             Per prenotazioni e appuntamenti<br>
             telefono. 338.9360852<br>
             email. <a class="link" href="mailto:ufficiovendite@borgoromito.it">ufficiovendite@borgoromito.it</a>
           </p>
+          <p class="intro" style="float: right; font-size: 90%">
+            <strong class="red">Agenzie convenzionate</strong><br>
+            <strong>ImmobiliPrato</strong><br>
+            via Zarini, 264 - Prato<br>
+            telefono. 348.7716090<br>
+            email. <a href="mailto:info@immobiliprato.it">info@immobiliprato.it</a>
+          </p>
+          <p class="clear"></p>
         </div>
       </div>
     </div>
-    <!-- /contatti -->
+    <!-- /ufficio vendite -->
   </section>
+
+  <!-- galleria immagini -->
+  <section class="galleria">
+    <?php include_once 'inc/galleria-immagini.php'; ?>
+  </section>
+  <!-- /galleria immagini -->
 
   <section id="news" class="news">
     <?php include_once 'inc/news.php' ?>
@@ -53,7 +67,6 @@
   </footer>
   <!-- /footer -->
   <!-- templates -->
-  <?php include_once 'inc/templates.php'; ?>
   <?php include_once 'inc/templates-appartamenti.php'; ?>
   <!-- /templates -->
   <!-- scripts -->
