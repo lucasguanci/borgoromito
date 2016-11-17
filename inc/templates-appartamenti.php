@@ -181,7 +181,11 @@
     <area shape="poly" alt="" coords="115,48, 141,48, 141,44, 168,44, 168,88, 152,88, 152,130, 115,130, 115,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B1-T4sx">
     <area shape="poly" alt="" coords="332,88, 332,44, 359,44, 359,48, 385,48, 385,130, 348,130, 348,88, 332,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C1-T4dx">
     <area shape="poly" alt="" coords="250,48, 304,48, 304,44, 332,44, 332,88, 315,88, 315,130, 306,130, 306,134, 250,134, 250,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C1-T5sx">
-    <area shape="poly" alt="" coords="439,48, 492,48, 492,156, 437,156, 437,130, 454,130, 454,88, 439,88, 439,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D1-T3dx">
+    <!--<area shape="poly" alt="" coords="439,48, 492,48, 492,156, 437,156, 437,130, 454,130, 454,88, 439,88, 439,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D1-T3dx">-->
+    <!-- sostituzione ex C1-T3dx -->
+    <area shape="poly" alt="" coords="439,152,492,153,492,110,454,110,454,113,439,113" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D1-T10">
+    <area shape="poly" alt="" coords="454,110,492,110,492,44,437,44,437,71,454,71" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D1-T11">
+    <!-- /sostituzione ex C1-T3dx -->
     <area shape="poly" alt="" coords="385,48, 410,48, 410,44, 439,44, 439,88, 421,88, 421,130, 385,130, 385,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D1-T4sx">
     <area shape="poly" alt="" coords="61,88, 61,44, 90,44, 90,48, 115,48, 115,130, 79,130, 79,88, 61,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A1-T4dx">
   </map>
@@ -192,7 +196,10 @@
     <area shape="poly" alt="" coords="115,48, 141,48, 141,44, 168,44, 168,88, 152,88, 152,130, 115,130, 115,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-B2-T4sx">
     <area shape="poly" alt="" coords="332,88, 332,44, 359,44, 359,48, 385,48, 385,130, 348,130, 348,88, 332,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C2-T4dx">
     <area shape="poly" alt="" coords="250,48, 304,48, 304,44, 332,44, 332,88, 315,88, 315,130, 306,130, 306,134, 250,134, 250,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-C2-T5sx">
-    <area shape="poly" alt="" coords="439,48, 492,48, 492,156, 437,156, 437,130, 454,130, 454,88, 439,88, 439,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D2-T3dx">
+    <!-- sostituzione ex C2-T3dx -->
+    <area shape="poly" alt="" coords="439,152,492,153,492,110,454,110,454,113,439,113" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D2-T10">
+    <area shape="poly" alt="" coords="454,110,492,110,492,44,437,44,437,71,454,71" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D2-T11">
+    <!-- /sostituzione ex C2-T3dx -->
     <area shape="poly" alt="" coords="385,48, 410,48, 410,44, 439,44, 439,88, 421,88, 421,130, 385,130, 385,48" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-D2-T4sx">
     <area shape="poly" alt="" coords="61,88, 61,44, 90,44, 90,48, 115,48, 115,130, 79,130, 79,88, 61,88" href="#tpl-risultati-ricerca-edificio-container" data-toggle="modal" data-target="#edC-A2-T4dx">
   </map>
