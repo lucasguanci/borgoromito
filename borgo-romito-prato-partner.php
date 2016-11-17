@@ -40,7 +40,7 @@
           </a>
           <p style="text-align: center">
             <a style="color: rgb(51,51,51)" href="http://www.brunettiantonelli.it/" target="blank">
-              Brunetti &amp; Antonelli
+              Brunetti
             </a><br>
             Costruzioni Edili
           </p>

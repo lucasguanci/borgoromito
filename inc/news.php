@@ -38,7 +38,7 @@
         <img src="images/news-complesso-residenziale-borgo-romito-mutuo-futuro-casa.png" />
       </a>
       <p class="cnt">
-        Grazie ad un accordo esclusivo con un primario Istituto di Credito, CAP CASA per l’acquisto della tua casa a BorgoRomito ti offre la possibilità di ottenere un Mutuo a condizioni particolarmente vantaggiose.<br>
+        Grazie ad un accordo esclusivo con primari Istituti di Credito, CAP CASA per l’acquisto della tua casa a BorgoRomito ti offre la possibilità di ottenere un Mutuo a condizioni particolarmente vantaggiose.<br>
         Richiedi informazioni dettagliate presso il nostro <a href="http://borgoromito.local/borgo-romito-prato-ufficio-vendite.php"<strong class="red">ufficio vendite</strong>.</a>
       </p>
     </div>
