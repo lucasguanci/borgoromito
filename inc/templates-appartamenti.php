@@ -300,46 +300,54 @@
           Scheda appartamento <%= app.nome %>
         </h4>
       </div>
-      <div class="modal-body">
-        <div class="modal-body-header">
-          <h5>Edificio</h5>
-          <div class="col-left" style="width: 45%; float:left; padding: 6px 0">            
-            <p class="edificio">
-              Edificio <%= app.edificio %> - piano <%= app.piano %>          
-            </p>
+      <% if ( app.venduto == true ) { %>
+        <div class="modal-body">
+          <div class="modal-body-header">
+            <p class="venduto">Unità immobiliare non disponibile</p>
           </div>
-          <div class="col-right" style="width: 45%; margin-left: 55%;">
-            <a id="pippo" class="btn btn-default galleria-immagini galleria-immagini-scheda" data-modal-id="#<%= app.nome %>" style="float: right" data-edificio="<%= app.edificio %>">galleria immagini</a>
-          </div>
-          <div class="clear"></div>
         </div>
-        <h5>Posizione nel piano</h5>
-        <img class="piano" src="<%= app.planimetria_piano %>" >
-        <h5>Descrizione appartamento</h5>
-        <p class="descrizione"><%= app.descrizione %></h5>
-        <h5>Planimetria appartamento</h5>
-        <img class="planimetria" src="<%= app.planimetria %>">
-        <h5>Superficie</h5>
-        <p class="superficie">
-          sup. LORDA: <%= app.superficie.lorda %> mq.<br>
-          sup. logge e balconi: <%= app.superficie.logge %> mq.<br>
-          sup. CONVENZIONALE: <%= app.superficie.convenzionale %> mq.
-        </p>
-        <h5>Camere</h5>
-        <p class="camere">
-          <% for ( i=0; i<app.camere.length; i++ ) { %>
-            <%= app.camere[i] %><br>
-          <% } %>
-        </p>
-        <h5>Bagni</h5>
-        <p class="bagno">
-          <% for ( i=0; i<app.bagni.length; i++ ) { %>
-            <%= app.bagni[i] %><br>
-          <% } %>
-        </p>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-        <a class="btn btn-default" href="<%= app.scheda_pdf %>">Scarica PDF</a>
-      </div>
+      <% } else { %>
+        <div class="modal-body">
+          <div class="modal-body-header">
+            <h5>Edificio</h5>
+            <div class="col-left" style="width: 45%; float:left; padding: 6px 0">            
+              <p class="edificio">
+                Edificio <%= app.edificio %> - piano <%= app.piano %>          
+              </p>
+            </div>
+            <div class="col-right" style="width: 45%; margin-left: 55%;">
+              <a id="pippo" class="btn btn-default galleria-immagini galleria-immagini-scheda" data-modal-id="#<%= app.nome %>" style="float: right" data-edificio="<%= app.edificio %>">galleria immagini</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <h5>Posizione nel piano</h5>
+          <img class="piano" src="<%= app.planimetria_piano %>" >
+          <h5>Descrizione appartamento</h5>
+          <p class="descrizione"><%= app.descrizione %></h5>
+          <h5>Planimetria appartamento</h5>
+          <img class="planimetria" src="<%= app.planimetria %>">
+          <h5>Superficie</h5>
+          <p class="superficie">
+            sup. LORDA: <%= app.superficie.lorda %> mq.<br>
+            sup. logge e balconi: <%= app.superficie.logge %> mq.<br>
+            sup. CONVENZIONALE: <%= app.superficie.convenzionale %> mq.
+          </p>
+          <h5>Camere</h5>
+          <p class="camere">
+            <% for ( i=0; i<app.camere.length; i++ ) { %>
+              <%= app.camere[i] %><br>
+            <% } %>
+          </p>
+          <h5>Bagni</h5>
+          <p class="bagno">
+            <% for ( i=0; i<app.bagni.length; i++ ) { %>
+              <%= app.bagni[i] %><br>
+            <% } %>
+          </p>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+          <a class="btn btn-default" href="<%= app.scheda_pdf %>">Scarica PDF</a>
+        </div>
+      <% } %>
     </div>
   </div>
 </div>
