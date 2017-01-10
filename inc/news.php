@@ -15,8 +15,7 @@
         <img src="images/news-complesso-residenziale-borgo-romito-progetto.jpg" />
       </a>
       <p class="cnt">
-        Il <strong class="red">Complesso Residenziale BorgoRomito</strong> è il risultato di un intervento di recupero ambientale di ampio respiro: in luogo di fabbricati industriali dismessi CAP Casa spa realizza edifici residenziali di pregio con ampie zone destinate a verde.<br>        
-        Appena fuori le Mura a due passi dal Centro Storico ... (<a class="link" href="borgo-romito-prato-progetto.php">continua</a>)
+        Il <strong class="red">Complesso Residenziale BorgoRomito</strong> è il risultato di un intervento di recupero ambientale di ampio respiro: a due passi dal Centro Storico di Prato e vicino a tutte le principali vie di comunicazione, in luogo di fabbricati industriali dismessi CAP Casa spa realizza edifici residenziali di pregio con ampie zone destinate a verde... (<a class="link" href="borgo-romito-prato-progetto.php">continua</a>)
       </p>
     </div>
     <!-- col.1 -->
@@ -28,7 +27,8 @@
         <img src="images/news-complesso-residenziale-borgo-romito-appartamenti.jpg" />
       </a>
       <p class="cnt">
-        Gli edifici del <strong class="red">Complesso Residenziale BorgoRomito</strong> sono dotati dei più moderni sistemi di contenimento dei consumi energetici, quali caldaie a condensazione centralizzate con contabilizzazione e regolazione personalizzata dei consumi e acqua calda centralizzata integrata con tecnologia solare. (<a class="link" href="borgo-romito-prato-appartamenti.php">continua</a>)
+        Gli edifici del <strong class="red">Complesso Residenziale BorgoRomito</strong> sono dotati dei più moderni sistemi di contenimento dei consumi energetici, e gli appartamenti sono certificati con Attestato di Prestazione Energetica (APE) in Classe A.
+        Le dotazioni comprendono caldaie a condensazione centralizzate con contabilizzazione e regolazione personalizzata... (<a class="link" href="borgo-romito-prato-appartamenti.php">continua</a>)
       </p>
     </div>
     <!-- col.3 -->
@@ -39,7 +39,7 @@
       </a>
       <p class="cnt">
         Grazie ad un accordo esclusivo con primari Istituti di Credito, CAP CASA per l’acquisto della tua casa a BorgoRomito ti offre la possibilità di ottenere un Mutuo a condizioni particolarmente vantaggiose.<br>
-        Richiedi informazioni dettagliate presso il nostro <a href="http://borgoromito.local/borgo-romito-prato-ufficio-vendite.php"<strong class="red">ufficio vendite</strong>.</a>
+        Richiedi informazioni dettagliate presso il nostro <a href="borgo-romito-prato-ufficio-vendite.php"<strong class="red">ufficio vendite</strong>.</a>
       </p>
     </div>
     <!-- col.4 -->

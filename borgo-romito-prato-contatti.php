@@ -55,7 +55,6 @@
   </footer>
   <!-- /footer -->
   <!-- templates -->
-  <?php include_once 'inc/templates.php'; ?>
   <?php include_once 'inc/templates-appartamenti.php'; ?>
   <!-- /templates -->
   <!-- scripts -->
