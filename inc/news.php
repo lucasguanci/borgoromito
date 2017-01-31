@@ -15,7 +15,7 @@
         <img src="images/news-complesso-residenziale-borgo-romito-progetto.jpg" />
       </a>
       <p class="cnt">
-        Il <strong class="red">Complesso Residenziale BorgoRomito</strong> è il risultato di un intervento di recupero ambientale di ampio respiro: in luogo di fabbricati industriali dismessi CAP Casa spa realizza edifici residenziali di pregio con ampie zone destinate a verde.<br>        
+        Il <strong class="red">Complesso Residenziale BorgoRomito</strong> è il risultato di un intervento di recupero ambientale di ampio respiro: in luogo di fabbricati industriali dismessi CAP Casa spa realizza edifici residenziali di pregio con ampie zone destinate a verde.<br>
         Appena fuori le Mura a due passi dal Centro Storico ... (<a class="link" href="borgo-romito-prato-progetto.php">continua</a>)
       </p>
     </div>
@@ -34,11 +34,8 @@
     <!-- col.3 -->
     <div class="col-md-3 news">
       <h2><a href="borgo-romito-prato-mutuo-agevolato.php">Mutuo agevolato</a></h2>
-      <a class="link-img" href="borgo-romito-prato-mutuo-agevolato.php">
-        <img src="images/news-complesso-residenziale-borgo-romito-mutuo-futuro-casa.png" />
-      </a>
       <p class="cnt">
-        Grazie ad un accordo esclusivo con un primario Istituto di Credito, CAP CASA per l’acquisto della tua casa a BorgoRomito ti offre la possibilità di ottenere un Mutuo a condizioni particolarmente vantaggiose.<br>
+        Grazie ad un accordo esclusivo con primari Istituti di Credito, CAP CASA per l’acquisto della tua casa a BorgoRomito ti offre la possibilità di ottenere un Mutuo a condizioni particolarmente vantaggiose.<br>
         Richiedi informazioni dettagliate presso il nostro <a href="http://borgoromito.local/borgo-romito-prato-ufficio-vendite.php"<strong class="red">ufficio vendite</strong>.</a>
       </p>
     </div>

@@ -26,9 +26,9 @@
           <h2>Ufficio vendite</h2>
           <div class="img-wrapper">
             <img src="images/complesso-residenziale-borgo-romito-piano-volumetrico.png" alt="Piano volumetrico Complesso residenziale BorgoRomito, Prato" />
-          </div>          
+          </div>
           <p class="intro">
-            Per ogni informazione sul <strong>Complesso Residenziale BorgoRomito</strong> puoi rivolgerti all’<span class="red">UFFICIO VENDITE</span>. Avrai il vantaggio derivante dalla vendita diretta senza intermediazione e grazie ad accordi esclusivi con un primario Istituto di Credito, la possibilità di accedere a mutui con condizioni particolarmente vantaggiose.
+            Per ogni informazione sul <strong>Complesso Residenziale BorgoRomito</strong> puoi rivolgerti all’<span class="red">UFFICIO VENDITE</span>. Avrai il vantaggio derivante dalla vendita diretta senza intermediazione e grazie ad accordi esclusivi con primari Istituti di Credito, la possibilità di accedere a mutui con condizioni particolarmente vantaggiose.
           </p>
           <p class="intro clear" style="float: left">
             <strong class="red">Ufficio vendite</strong><br>
@@ -37,13 +37,13 @@
             telefono. 338.9360852<br>
             email. <a class="link" href="mailto:ufficiovendite@borgoromito.it">ufficiovendite@borgoromito.it</a>
           </p>
-          <p class="intro" style="float: right; font-size: 90%">
+          <!-- <p class="intro" style="float: right; font-size: 90%">
             <strong class="red">Agenzie convenzionate</strong><br>
             <strong>ImmobiliPrato</strong><br>
             via Zarini, 264 - Prato<br>
             telefono. 348.7716090<br>
             email. <a href="mailto:info@immobiliprato.it">info@immobiliprato.it</a>
-          </p>
+          </p> -->
           <p class="clear"></p>
         </div>
       </div>
@@ -60,10 +60,10 @@
   <section id="news" class="news">
     <?php include_once 'inc/news.php' ?>
   </section>
-  <!-- /content -->    
+  <!-- /content -->
   <!-- footer -->
   <footer>
-    <?php include_once 'inc/footer.php'; ?>  
+    <?php include_once 'inc/footer.php'; ?>
   </footer>
   <!-- /footer -->
   <!-- templates -->
