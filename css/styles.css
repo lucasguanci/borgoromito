@@ -106,6 +106,7 @@ section#cookies-wrapper div.cookies-right {
  */
 nav.navbar-fixed-top {
   /*border-top: solid 1em @magenta;*/
+
 }
 .navbar {
   color: #333333;
@@ -274,6 +275,9 @@ div#news-slider div.carousel-caption {
   opacity: 0;
   z-index: 2;
 }
+.carousel-indicators .active {
+  background-color: #b90000;
+}
 /**
  * Galleria fotografica
 **/
@@ -296,7 +300,9 @@ section#content {
   background-color: white;
   padding: 1em 0;
   /*min-height: 35em;*/
+
   /* secondary pages */
+
 }
 section#content h2 {
   color: #b90000;
@@ -351,6 +357,7 @@ section#content div.appartamenti.ricerca label.disabled {
 }
 section#content div.risultati-ricerca {
   /*display: none;*/
+
 }
 section#content div.risultati-ricerca div.tab-pane {
   background-color: white;
