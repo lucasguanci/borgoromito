@@ -33,13 +33,13 @@
     </div>
     <!-- col.3 -->
     <div class="col-md-3 news">
-      <h2><a href="borgo-romito-prato-mutuo-agevolato.php">Mutuo agevolato</a></h2>
-      <a class="link-img" href="borgo-romito-prato-mutuo-agevolato.php">
-        <img src="images/news-complesso-residenziale-borgo-romito-mutuo-futuro-casa.png" />
+      <h2><a href="borgo-romito-prato-mutuo-agevolato.php">Immagina la tua casa</a></h2>
+      <a class="link-img" href="">
+        <img src="images/news-complesso-residenziale-borgo-romito-bottega-dell-artigiano.png" />
       </a>
       <p class="cnt">
-        Grazie ad un accordo esclusivo con primari Istituti di Credito, CAP CASA per l’acquisto della tua casa a BorgoRomito ti offre la possibilità di ottenere un Mutuo a condizioni particolarmente vantaggiose.<br>
-        Richiedi informazioni dettagliate presso il nostro <a href="borgo-romito-prato-ufficio-vendite.php"<strong class="red">ufficio vendite</strong>.</a>
+        Per aiutarti ad immaginare la tua nuova casa, abbiamo scelto di realizzare un arredamento completo in tutti i dettagli: dalla cucina al soggiorno, dalle camere da letto fino al bagno, potrai apprezzare una delle possibili soluzioni offerte dagli appartamenti di BorgoRomito.
+        Gli arredi sono realizzati in collaborazione con il nostro partner <a href="http://www.bottegadellartigiano.it/" title="Bottega dell’Artigiano">Bottega dell’Artigiano</a> di Luigi Segala.
       </p>
     </div>
     <!-- col.4 -->

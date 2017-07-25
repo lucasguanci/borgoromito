@@ -31,9 +31,12 @@
                 <span class="menu-item">
                   <a href="borgo-romito-prato-ufficio-vendite.php">Ufficio vendite</a>
                 </span>
-                <span class="menu-item last">
+                <span class="menu-item">
                   <a href="borgo-romito-prato-mutuo-agevolato.php">Mutuo agevolato</a>
                 </span>
+                <span class="menu-item last">
+                  <a href="borgo-romito-prato-partner.php" title="BorgoRomito, i partner">Partner</a>
+                </span>                
               </p>
             </div>
           </div>
